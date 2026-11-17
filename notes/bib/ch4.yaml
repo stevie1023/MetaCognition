@@ -1,0 +1,655 @@
+# Bibliography: ch4 — see notes/taxonomy.yaml for the structure.
+# Two facets per entry:
+#   role  — what job the citation does in the argument
+#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   deck_rank — position in the corrected deck's citation string
+#               (-1 marks this survey's own proposal; 999 = unnamed)
+
+- section: "4.1"
+  papers:
+    - title: 'Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.11511', 'code': 'https://github.com/AkariAsai/self-rag'}
+      role: representative
+      tier: D
+      deck_rank: 0
+      why: 'Trains a retrieve token into the output so the model decides on demand whether to consult external knowledge, the cleanest learned formulation of when to reach outside itself.'
+    - title: 'MUR: Momentum Uncertainty Guided Reasoning for Large Language Models'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://arxiv.org/abs/2507.14958', 'acl': 'https://aclanthology.org/2026.acl-long.1058'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'Replaces uniform test-time scaling with a per-step intervention trigger driven by time-aggregated uncertainty, and supplies the control knob that makes ''when to intervene'' a single tunable policy — the definitional instantiation of a monitoring-to-control hook.'
+    - title: 'Dynamic Early Exit in Reasoning Models'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2504.15895'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes the intervention decision a decode-time probe at reasoning-transition points, proving the controller can decide mid-trajectory whether more computation still pays off rather than pre-committing a budget.'
+    - title: 'Entropy After the Thinking Marker for Reasoning Model Early Exiting'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2509.26522'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Gives the mechanistic account of why late steps stop paying: pass@1 saturates while entropy stabilises, so the marginal value of computation becomes directly observable.'
+    - title: 'Phi-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation'
+      venue: 'ACL 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.13288', 'acl': 'https://aclanthology.org/2025.acl-long.647/'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Frames the intervention as a foresight-sampling estimate of step value with pruning, a controller deciding at each step whether the expected gain of an extra step exceeds its cost.'
+    - title: 'Adaptive Inference-Time Compute: LLMs Can Predict if They Can Do Better, Even Mid-Generation'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.02725'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Supplies the missing capability premise for this section — that a model can self-predict before generating whether continued computation will improve the answer, which is what licenses any step-level intervention trigger.'
+    - title: 'Self-Evaluation Guided Beam Search for Reasoning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.00633'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Early demonstration that a calibrated self-evaluation signal can serve as the step-scoring controller for search, decoupling when to continue a branch from the generator.'
+    - title: 'GLoRe: When, Where, and How to Improve LLM Reasoning via Global and Local Refinements'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.10963'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Names the section''s question in its title and answers it with a two-level controller (a stepwise reward model for when and where, a refinement model for how), making it the canonical decomposition of the intervention problem.'
+    - title: 'Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.03271'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Uses simulated futures plus an information-gain reward to decide whether the agent should spend a step acquiring information rather than answering now — the same stop-or-continue logic applied to an interactive trajectory.'
+    - title: 'Learning How Hard to Think: Input-Adaptive Allocation of LM Computation'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.04707'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Establishes the input-adaptive branch of the intervention question, providing the baseline against which trajectory-adaptive controllers are argued to be necessary.'
+    - title: 's1: Simple Test-Time Scaling'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2501.19393'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Budget forcing is the minimal hand-coded intervention policy, and the deliberately unattractive strawman that motivates learned, signal-driven triggers.'
+    - title: 'Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2509.03581'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows a Goldilocks effect where always-intervening and never-intervening both lose to dynamic scheduling, supplying the section''s central empirical claim that the timing of intervention, not its amount, drives the gain.'
+    - title: 'Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies'
+      venue: 'EMNLP 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.06461', 'acl': 'https://aclanthology.org/2024.emnlp-main.1112/'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The compute-matched control that deflates most intervention claims: many smarter step-level strategies fail to beat plain self-consistency at equal budget, so any claimed payoff from a trigger must survive this evaluation.'
+    - title: 'Tree of Thoughts: Deliberate Problem Solving with Large Language Models'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.10601', 'code': 'https://github.com/princeton-nlp/tree-of-thought-llm'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Introduces the explicit step-level deliberation decision (expand, evaluate, prune) that every later intervention trigger in this section is a cheaper approximation of.'
+    - title: 'Reasoning with Language Model is Planning with World Model'
+      venue: 'EMNLP 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.14992', 'code': 'https://github.com/Ber666/llm-reasoners'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Formalizes reasoning as Monte Carlo tree search over a world model, the source of the value-of-a-state estimate that ''when to intervene'' is trying to compute cheaply.'
+
+- section: "4.2"
+  papers:
+    - title: 'Tree of Thoughts: Deliberate Problem Solving with Large Language Models'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.10601', 'code': 'https://github.com/princeton-nlp/tree-of-thought-llm'}
+      role: foundational
+      tier: A
+      deck_rank: 0
+      why: 'Introduces the explicit step-level deliberation decision (expand, evaluate, prune) that every later intervention trigger in this section is a cheaper approximation of.'
+    - title: 'Self-Discover: Large Language Models Self-Compose Reasoning Structures'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.03620'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Selects a reasoning structure per task rather than applying one prompt template, the clearest formulation of which strategy to invoke at the task level.'
+    - title: 'Self-Consistency Improves Chain of Thought Reasoning in Language Models'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2203.11171'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The simplest strategy, marginalizing over sampled paths; establishes the baseline any adaptive selector must beat at matched compute, and defines ''when is resampling enough'' as a real question.'
+    - title: 'Least-to-Most Prompting Enables Complex Reasoning in Large Language Models'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2205.10625'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The decompose-then-solve strategy whose benefit is state-dependent, making it a primary example of why strategy selection cannot be fixed globally.'
+    - title: 'Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models'
+      venue: 'ACL 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.04091'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Canonical explicit plan-then-execute strategy; together with ReAct it forms the always-plan pole that later dynamic-scheduling work argues against.'
+    - title: 'Graph of Thoughts: Solving Elaborate Problems with Large Language Models'
+      venue: 'AAAI 2024'
+      links: {'paper': 'https://arxiv.org/abs/2308.09687'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Generalizes the strategy space beyond chains and trees by allowing arbitrary merging of intermediate results, expanding what a strategy selector chooses among.'
+    - title: 'Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations'
+      venue: 'EMNLP 2022'
+      links: {'paper': 'https://arxiv.org/abs/2205.11822'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'A search strategy over logical consistency that is invoked only when the direct answer fails consistency — an early state-conditional strategy switch.'
+    - title: 'Automatic Chain of Thought Prompting in Large Language Models'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2210.03493', 'code': 'https://github.com/amazon-science/auto-cot'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes strategy invocation itself automatic via question clustering, turning prompt-strategy choice into an algorithm rather than a human decision.'
+    - title: 'Universal Self-Consistency for Large Language Model Generation'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2311.17311'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Extends the voting strategy to free-form outputs by delegating selection back to the model, removing the answer-extraction assumption that limited self-consistency as a general strategy.'
+    - title: 'Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.04406', 'code': 'https://github.com/lapisrocks/LanguageAgentTreeSearch'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'A single search controller that selects among reasoning, acting, and reflection strategies over one tree, making strategy selection an explicit action in the search space.'
+    - title: 'Stream of Search: Learning to Search in Language'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2404.03683'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Trains the model to emit search traces, so the strategy selector is learned end-to-end rather than prompt-engineered — the learned-controller counterpart to prompted selection.'
+    - title: 'Skeleton-of-Thought: Prompting LLMs for Efficient Parallel Generation'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2307.15337'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Represents the parallelize-then-expand strategy whose payoff depends on answer structure, illustrating that strategy value is conditional on a property the controller must first identify.'
+    - title: 'Q*: Improving Multi-Step Reasoning for LLMs with Deliberative Planning'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.14283'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Applies A-star style deliberative planning with an admissible heuristic as the strategy, giving a worked example of a value-guided rather than heuristic strategy switch.'
+
+- section: "4.3"
+  papers:
+    - title: 'ReAct: Synergizing Reasoning and Acting in Language Models'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2210.03629', 'code': 'https://github.com/ysymyth/ReAct'}
+      role: foundational
+      tier: A
+      deck_rank: 0
+      why: 'Defines the interleaved thought-act loop in which the model itself emits the token that triggers an external call, establishing when to reach outside itself as a modelling decision rather than a fixed pipeline stage.'
+    - title: 'Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.11511', 'code': 'https://github.com/AkariAsai/self-rag'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'Trains a retrieve token into the output so the model decides on demand whether to consult external knowledge, the cleanest learned formulation of when to reach outside itself.'
+    - title: 'AutoMix: Automatically Mixing Language Models'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.12963'}
+      role: representative
+      tier: D
+      deck_rank: 2
+      why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
+    - title: 'Toolformer: Language Models Can Teach Themselves to Use Tools'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2302.04761'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Makes API-call tokens a learned part of the output distribution, so the tool-invocation decision is trained on whether the call actually reduced loss — a self-supervised value-of-tool criterion.'
+    - title: 'ToolLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2307.16789', 'code': 'https://github.com/OpenBMB/ToolBench'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Supplies the large-scale API-retrieval and tool-selection evaluation subsequent delegation controllers are measured against, and shows selection quality degrades long before invocation ability does.'
+    - title: 'HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17580'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Canonical LLM-as-controller architecture: the model decomposes a task and dispatches sub-calls to specialised expert models, the purest instance of delegation as an intervention.'
+    - title: 'WebGPT: Browser-Assisted Question-Answering with Human Feedback'
+      venue: 'arXiv 2021'
+      links: {'paper': 'https://arxiv.org/abs/2112.09332'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Earliest large-scale demonstration that a language model can learn to issue search and quote actions mid-generation, the direct ancestor of learned retrieval-trigger policies.'
+    - title: 'PAL: Program-Aided Language Models'
+      venue: 'ICML 2023'
+      links: {'paper': 'https://arxiv.org/abs/2211.10435'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The delegate-to-interpreter strategy: the model emits code instead of executing arithmetic itself, showing that offloading a step to a solver outperforms in-context computation when the step is formally checkable.'
+    - title: 'Program of Thoughts Prompting: Disentangling Computation from Reasoning'
+      venue: 'TMLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2211.12588'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Same delegation principle with an explicit separation of reasoning from execution, isolating what should be delegated from what should stay in the model.'
+    - title: 'Chain of Code: Reasoning with a Language Model-Augmented Code Emulator'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2312.04474'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Handles the boundary case where delegation fails — the model emulates the interpreter when code cannot execute — defining a fallback policy for the tool-use controller.'
+    - title: 'Active Retrieval Augmented Generation (FLARE)'
+      venue: 'EMNLP 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.06983', 'code': 'https://github.com/jzbjyb/FLARE'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Triggers retrieval from low-confidence tokens during generation, the prompt-based counterpart to Self-RAG, and the canonical monitoring-signal-drives-external-call mechanism.'
+    - title: 'Search-o1: Agentic Search-Enhanced Large Reasoning Models'
+      venue: 'EMNLP 2025'
+      links: {'paper': 'https://arxiv.org/abs/2501.05366', 'code': 'https://github.com/RUC-NLPIR/Search-o1'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Detects the uncertain knowledge point inside a chain of thought and injects a search step there, extending retrieval gating to long reasoning models.'
+    - title: 'CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.11738'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Uses external tools as the verifier that grounds self-correction, making tool invocation the mechanism by which the model escapes its own ungrounded critique — the bridge between this subsection and error correction.'
+    - title: 'ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.18323'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Decides all tool calls up front in a plan rather than per step, giving the section the opposite design point (eager versus lazy delegation) and the token-efficiency argument for batching observations.'
+    - title: 'LLMs Can''t Plan, But Can Help Planning in LLM-Modulo Frameworks'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.01817'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'States the delegation thesis in its strongest form — the model should generate candidates and hand verification to external critics — and is the framework reference for the reach-outside-itself-for-soundness argument.'
+    - title: 'Large Language Models as Tool Makers'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.17126'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Delegates tool creation as well as tool calling, extending the controller''s action set from invocation to self-extension.'
+
+- section: "4.4"
+  papers:
+    - title: 'Self-Refine: Iterative Refinement with Self-Feedback'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17651', 'code': 'https://github.com/madaan/self-refine'}
+      role: representative
+      tier: A
+      deck_rank: 0
+      why: 'The canonical claim that a model can improve its own output without external feedback, and therefore the primary target of the contrast cited next.'
+    - title: 'CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.11738'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'Uses external tools as the verifier that grounds self-correction, making tool invocation the mechanism by which the model escapes its own ungrounded critique — the bridge between this subsection and error correction.'
+    - title: 'Training Language Models to Self-Correct via Reinforcement Learning (SCoRe)'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12917'}
+      role: representative
+      tier: A
+      deck_rank: 2
+      why: 'Attacks the negative result on its own terms by training the self-correction policy with reinforcement learning, showing the failure is a training-distribution artefact rather than an architectural limit.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+    - title: 'Reflexion: Language Agents with Verbal Reinforcement Learning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.11366'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes correction episodic and cross-trial via a verbal memory buffer, distinguishing retry-with-reflection from single-pass refinement and explaining why it only helps when an environment signal supplies the error.'
+    - title: 'Teaching Large Language Models to Self-Debug'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2304.05128'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The strongest positive case for self-correction, because execution feedback gives a genuine error signal; it delimits the regime in which the Self-Refine claim actually holds.'
+    - title: 'Is Self-Repair a Silver Bullet for Code Generation?'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2306.09896'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Shows self-repair''s benefit is driven by which feedback is available rather than by any intrinsic repairing ability, and that models often break already-correct code — a domain-specific replication of the negative result.'
+    - title: 'GPT-4 Doesn''t Know It''s Wrong: An Analysis of Iterative Prompting for Reasoning Problems'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2310.12397'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Isolates the failure as an error-detection rather than error-correction deficit, the mechanistic diagnosis that later work in this section builds on.'
+    - title: 'Can Large Language Models Really Improve by Self-Critiquing Their Own Plans?'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2310.08118'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Runs the self-critique claim against a sound external verifier and finds the self-critique component itself adds little — the planning-domain twin of the reasoning negative result.'
+    - title: 'On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.08115'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The ablation that settles the debate: sound external verification helps, self-critique collapses performance, and the content of feedback barely matters — establishing that the bottleneck is verification soundness, not critique quality.'
+    - title: 'When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs'
+      venue: 'TACL 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.01297'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
+    - title: 'LLMs Cannot Find Reasoning Errors, But Can Correct Them Given the Error Location'
+      venue: 'ACL Findings 2024'
+      links: {'paper': 'https://arxiv.org/abs/2311.08516'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Separates detection from correction experimentally and shows correction succeeds once the location is supplied, localizing the failure precisely to the monitoring signal rather than the intervention itself.'
+    - title: 'Recursive Introspection: Teaching Language Model Agents How to Self-Improve'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2407.18219'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Turns multi-turn correction into a learned policy trained on its own prior attempts, the natural successor to the reinforcement-learning self-correction line and the boundary of what fine-tuning can buy.'
+    - title: 'Confidence Matters: Revisiting Intrinsic Self-Correction Capabilities of Large Language Models'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.12563'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows intrinsic self-correction works only when the model is both certain and wrong, identifying the calibration condition that makes the correction decision non-trivial.'
+    - title: 'SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models'
+      venue: 'EMNLP 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.08896'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Provides the black-box error-detection metric underlying nearly all later correction controllers, making the monitoring signal in this section measurable independently of the correction policy.'
+    - title: 'Improving Factuality and Reasoning in Language Models through Multiagent Debate'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.14325'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Replaces self-critique with cross-instance critique, the natural repair once self-verification is shown to be unsound — externalizing the check without invoking symbolic tools.'
+
+- section: "4.5"
+  papers:
+    - title: 'MUR: Momentum Uncertainty Guided Reasoning for Large Language Models'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://arxiv.org/abs/2507.14958', 'acl': 'https://aclanthology.org/2026.acl-long.1058'}
+      role: representative
+      tier: D
+      deck_rank: 0
+      why: 'Replaces uniform test-time scaling with a per-step intervention trigger driven by time-aggregated uncertainty, and supplies the control knob that makes ''when to intervene'' a single tunable policy — the definitional instantiation of a monitoring-to-control hook.'
+    - title: 's1: Simple Test-Time Scaling'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2501.19393'}
+      role: representative
+      tier: B
+      deck_rank: 1
+      why: 'Budget forcing is the minimal hand-coded intervention policy, and the deliberately unattractive strawman that motivates learned, signal-driven triggers.'
+    - title: 'Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2408.03314'}
+      role: foundational
+      tier: A
+      deck_rank: 2
+      why: 'The axis-setting result: it defines compute-optimal allocation and shows the best distribution of a fixed budget depends on prompt difficulty, which is the formal statement of the allocation problem.'
+    - title: 'Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2408.00724'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Provides the empirical scaling law that lets a controller price strategies against each other, converting ''how much'' from a heuristic into an optimization over measured curves.'
+    - title: 'Large Language Monkeys: Scaling Inference Compute with Repeated Sampling'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2407.21787'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Establishes that raw resampling scales coverage broadly across domains, setting the dumb-but-strong baseline that any smarter allocation must beat per unit of compute.'
+    - title: 'Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies'
+      venue: 'EMNLP 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.06461', 'acl': 'https://aclanthology.org/2024.emnlp-main.1112/'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The compute-matched control that deflates most intervention claims: many smarter step-level strategies fail to beat plain self-consistency at equal budget, so any claimed payoff from a trigger must survive this evaluation.'
+    - title: 'Token-Budget-Aware LLM Reasoning'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2412.18547'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Estimates a per-problem token budget and constrains generation to it, the direct engineering implementation of allocating a fixed budget across a workload.'
+    - title: 'Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://arxiv.org/abs/2412.21187'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Defines and measures overthinking with outcome and process efficiency metrics, establishing that wasted computation is a predictable, correctable failure mode.'
+    - title: 'Provable Scaling Laws for the Test-Time Compute of Large Language Models'
+      venue: 'NeurIPS 2025'
+      links: {'paper': 'https://arxiv.org/abs/2411.19477'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Supplies the theoretical guarantee that a repeated-sampling and hence budget-allocated scheme converges to a target accuracy, upgrading allocation from empirical tuning to a designed policy.'
+    - title: 'Scaling LLM Inference with Optimized Sample Compute Allocation'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.22480'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Formulates sample-versus-length allocation as an explicit optimization over a mixture of strategies, the clearest instance of spreading one budget across a heterogeneous trajectory.'
+    - title: 'Adaptive Inference-Time Compute: LLMs Can Predict if They Can Do Better, Even Mid-Generation'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.02725'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Supplies the missing capability premise for this section — that a model can self-predict before generating whether continued computation will improve the answer, which is what licenses any step-level intervention trigger.'
+    - title: 'Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models'
+      venue: 'TMLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.16419'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
+    - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12183'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows the budget''s marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.'
+    - title: 'Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2509.03581'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows a Goldilocks effect where always-intervening and never-intervening both lose to dynamic scheduling, supplying the section''s central empirical claim that the timing of intervention, not its amount, drives the gain.'
+    - title: 'Compressed Chain of Thought: Efficient Reasoning Through Dense Representations'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2412.13171'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Represents the compression axis of budget allocation — spend the same budget in a denser medium — broadening ''how much'' from token count to information per token.'
+
+- section: "4.6"
+  papers:
+    - title: 'AutoMix: Automatically Mixing Language Models'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.12963'}
+      role: representative
+      tier: D
+      deck_rank: 0
+      why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
+    - title: 'RouteLLM: Learning to Route LLMs with Preference Data'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://openreview.net/forum?id=TriSxazD2A'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.'
+    - title: 'LLM2Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them'
+      venue: 'arXiv 2026'
+      links: {'paper': 'https://arxiv.org/abs/2610.02076', 'code': 'https://github.com/nokia-applied-research/AnyJev'}
+      role: representative
+      tier: A
+      deck_rank: 2
+      why: 'Extracts a calibrated decision directly from next-token probabilities over candidate options instead of generating free text — the cheapest end of the cost-aware controller spectrum, and evidence that the decision can be read off the base model without a separate head.'
+    - title: 'Principles of Metareasoning'
+      venue: 'Artificial Intelligence 1991'
+      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-R'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Defines the value of computation as the expected change in action utility minus time cost, and derives the stop-when-no-positive-value rule — the formal basis for ''is more thinking worth it''.'
+    - title: 'Rational Metareasoning for Large Language Models'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.05563'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The explicit bridge from Russell and Wefald to LLMs — a value-of-computation reward penalizing unnecessary reasoning, used with expert iteration — making it the section''s definitional cite for grounding control in expected utility.'
+    - title: 'FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance'
+      venue: 'arXiv 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.05176'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Casts model cascading as an explicit cost-quality optimization and learns when to stop escalating, the earliest clean formulation of the expected-value-versus-cost decision for LLM control.'
+    - title: 'Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2404.14618'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Builds the router to optimize a stated cost-quality trade-off with a tunable threshold, making grounded-in-expected-utility testable by moving that threshold.'
+    - title: 'Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.03271'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Uses simulated futures plus an information-gain reward to decide whether the agent should spend a step acquiring information rather than answering now — the same stop-or-continue logic applied to an interactive trajectory.'
+    - title: 'GLoRe: When, Where, and How to Improve LLM Reasoning via Global and Local Refinements'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.10963'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Names the section''s question in its title and answers it with a two-level controller (a stepwise reward model for when and where, a refinement model for how), making it the canonical decomposition of the intervention problem.'
+    - title: 'Let''s Verify Step by Step'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.20050', 'data': 'https://github.com/openai/prm800k'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Establishes process supervision as the utility-bearing signal for step-level control and releases the annotated corpus that makes learned verifiers evaluable.'
+    - title: 'Math-Shepherd: Verify and Reinforce LLMs Step-by-Step Without Human Annotations'
+      venue: 'ACL 2024'
+      links: {'paper': 'https://arxiv.org/abs/2312.08935'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Removes the human-annotation cost of the process verifier, which is what makes a utility-based controller deployable at scale rather than a benchmark-only construct.'
+    - title: 'Scaling LLM Inference with Optimized Sample Compute Allocation'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2410.22480'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Formulates sample-versus-length allocation as an explicit optimization over a mixture of strategies, the clearest instance of spreading one budget across a heterogeneous trajectory.'
+    - title: 'MetaCtrl: Your Large Language Models Can Reason Better and More Concisely with a Metacognitive Controller'
+      venue: 'arXiv 2026'
+      links: {'paper': 'https://arxiv.org/abs/2609.37304'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The most current instantiation of the section''s thesis: a separate meta-level controller over a frozen reasoner, trained with GRPO on a correctness-plus-efficiency reward, deciding continue, fast-think, skip-think, or stop-think at each state.'
+    - title: 'Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning'
+      venue: 'arXiv 2026'
+      links: {'paper': 'https://arxiv.org/abs/2609.38147'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Splits control from execution in a long-horizon agent and shows the controller, not the executor, captures the gains at large budgets — the agentic-level evidence that explicit meta-level control pays off.'
+    - title: 'A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2501.02497', 'repo': 'https://github.com/Dereck0602/Awesome_Test_Time_LLMs'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The sibling survey this chapter must position against; its feedback-modeling and search-strategy taxonomy frames how utility-aware control relates to the broader test-time-compute literature.'
+

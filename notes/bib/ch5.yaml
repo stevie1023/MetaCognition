@@ -1,0 +1,424 @@
+# Bibliography: ch5 — see notes/taxonomy.yaml for the structure.
+# Two facets per entry:
+#   role  — what job the citation does in the argument
+#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   deck_rank — position in the corrected deck's citation string
+#               (-1 marks this survey's own proposal; 999 = unnamed)
+
+- section: "5.1"
+  papers:
+    - title: 'A Signal Detection Theoretic Approach for Estimating Metacognitive Sensitivity from Confidence Ratings'
+      venue: 'Consciousness and Cognition 2012'
+      links: {'paper': 'https://doi.org/10.1016/j.concog.2011.09.021'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'Introduces meta-d-prime and the signal-detection framework separating metacognitive sensitivity from response bias; supplies the theoretical basis for AUROC-style discrimination metrics and for the argument that raw confidence is confounded by bias.'
+    - title: 'Language Models (Mostly) Know What They Know'
+      venue: 'arXiv 2022'
+      links: {'paper': 'https://arxiv.org/abs/2207.05221'}
+      role: foundational
+      tier: D
+      deck_rank: 1
+      why: 'Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.'
+    - title: 'How to Measure Metacognition'
+      venue: 'Frontiers in Human Neuroscience 2014'
+      links: {'paper': 'https://doi.org/10.3389/fnhum.2014.00443'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Defines the bias/sensitivity/efficiency triple and imports signal-detection measures, supplying the metric vocabulary the evaluation chapter adopts.'
+    - title: 'On Calibration of Modern Neural Networks'
+      venue: 'ICML 2017'
+      links: {'paper': 'https://proceedings.mlr.press/v70/guo17a.html'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The pre-LLM baseline: modern nets are miscalibrated and temperature scaling partly fixes it — the reference point against which LLM-specific calibration is measured.'
+    - title: 'Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from LLMs'
+      venue: 'EMNLP 2023'
+      links: {'paper': 'https://aclanthology.org/2023.emnlp-main.330/'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows RLHF degrades logit calibration while verbalized confidence recovers much of it — the key result separating distorted output from lost internal certainty.'
+    - title: 'Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2302.09664'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Introduces semantic entropy, moving uncertainty from token sequences to meanings — the conceptual fix that makes free-form calibration tractable.'
+    - title: 'Detecting Hallucinations in Large Language Models Using Semantic Entropy'
+      venue: 'Nature 2024'
+      links: {'paper': 'https://doi.org/10.1038/s41586-024-07421-0'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Elevates semantic entropy to a validated confabulation detector with a Nature-scale generalization claim, anchoring the strongest-calibration-signal argument.'
+    - title: 'A Survey of Confidence Estimation and Calibration in Large Language Models'
+      venue: 'NAACL 2024'
+      links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
+    - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
+      venue: 'AAAI 2025'
+      links: {'paper': 'https://doi.org/10.1609/aaai.v39i24.34723'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Operationalizes ''genuinely metacognitive'' as ability independent of cognitive ability, giving the definition boundary a quantitative test.'
+    - title: 'What Large Language Models Know and What People Think They Know'
+      venue: 'Nature Machine Intelligence 2025'
+      links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
+
+- section: "5.2"
+  papers:
+    - title: 'AutoMix: Automatically Mixing Language Models'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.12963'}
+      role: representative
+      tier: D
+      deck_rank: 0
+      why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
+    - title: 'RouteLLM: Learning to Route LLMs with Preference Data'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://openreview.net/forum?id=TriSxazD2A'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.'
+    - title: 'Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies'
+      venue: 'EMNLP 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.06461', 'acl': 'https://aclanthology.org/2024.emnlp-main.1112/'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The compute-matched control that deflates most intervention claims: many smarter step-level strategies fail to beat plain self-consistency at equal budget, so any claimed payoff from a trigger must survive this evaluation.'
+    - title: 'AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2506.09038'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'A systematic benchmark in which abstention is the utility-bearing action; used to show that utility gains from monitoring can be negative if the abstention policy is miscalibrated.'
+    - title: 'LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens'
+      venue: 'EMNLP 2025'
+      links: {'paper': 'https://aclanthology.org/2025.emnlp-main.171/'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Distinguishes the intrinsic metacognitive signal from the imperfect readout, giving the mechanism-versus-measurement distinction for step-level confidence.'
+    - title: 'Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2408.03314'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The axis-setting result: it defines compute-optimal allocation and shows the best distribution of a fixed budget depends on prompt difficulty, which is the formal statement of the allocation problem.'
+    - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12183'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows the budget''s marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.'
+    - title: 'A Survey of Confidence Estimation and Calibration in Large Language Models'
+      venue: 'NAACL 2024'
+      links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
+
+- section: "5.3"
+  papers:
+    - title: 'Survey protocol: compare Q estimates to outcomes'
+      venue: 'this survey (proposal)'
+      links: {}
+      role: positioning
+      tier: S
+      deck_rank: -1
+      why: 'The evaluation protocol this survey proposes but no cited paper runs end to end: record the controller''s ex-ante expected utility Q at each decision point, then score it against the realized gain.'
+    - title: 'AutoMix: Automatically Mixing Language Models'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.12963'}
+      role: representative
+      tier: A
+      deck_rank: 0
+      why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
+    - title: 'MUR: Momentum Uncertainty Guided Reasoning for Large Language Models'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://arxiv.org/abs/2507.14958', 'acl': 'https://aclanthology.org/2026.acl-long.1058'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Replaces uniform test-time scaling with a per-step intervention trigger driven by time-aggregated uncertainty, and supplies the control knob that makes ''when to intervene'' a single tunable policy — the definitional instantiation of a monitoring-to-control hook.'
+    - title: 'How Overconfidence in Initial Choices Corrupts Reasoning'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2507.03120'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Demonstrates the controller''s own value estimates are systematically overconfident early, so expected utility diverges from realized — the core expected-versus-realized pathology in this subsection.'
+    - title: 'Do Large Language Models Know What They Are Capable Of?'
+      venue: 'ICLR 2026'
+      links: {'paper': 'https://openreview.net/forum?id=EO6WtJ0q6G'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Shows systematic overconfidence worsening across multi-step tasks with no scaling benefit in discrimination — the decisive negative result for capability self-knowledge.'
+    - title: 'What Large Language Models Know and What People Think They Know'
+      venue: 'Nature Machine Intelligence 2025'
+      links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
+    - title: 'Language Models (Mostly) Know What They Know'
+      venue: 'arXiv 2022'
+      links: {'paper': 'https://arxiv.org/abs/2207.05221'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.'
+    - title: 'Evidence for Limited Metacognition in Large Language Models'
+      venue: 'ICLR 2026'
+      links: {'paper': 'https://arxiv.org/abs/2509.21545'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.'
+    - title: 'LLM Evaluators Recognize and Favor Their Own Generations'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2404.13076'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Causal link between self-recognition and self-preference shows introspection-like access is real and simultaneously a safety hazard, motivating the critical framing of this subsection.'
+    - title: 'Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from LLMs'
+      venue: 'EMNLP 2023'
+      links: {'paper': 'https://aclanthology.org/2023.emnlp-main.330/'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows RLHF degrades logit calibration while verbalized confidence recovers much of it — the key result separating distorted output from lost internal certainty.'
+    - title: 'A Survey of Confidence Estimation and Calibration in Large Language Models'
+      venue: 'NAACL 2024'
+      links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
+
+- section: "5.4"
+  papers:
+    - title: 'Survey protocol: matched-state action ablations'
+      venue: 'this survey (proposal)'
+      links: {}
+      role: positioning
+      tier: S
+      deck_rank: -1
+      why: 'The attribution standard this survey proposes: intervene and withhold the metacognitive action from the same state, so that the difference is the action rather than the state that triggered it.'
+    - title: 'Self-Refine: Iterative Refinement with Self-Feedback'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17651', 'code': 'https://github.com/madaan/self-refine'}
+      role: representative
+      tier: B
+      deck_rank: 0
+      why: 'The canonical claim that a model can improve its own output without external feedback, and therefore the primary target of the contrast cited next.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 1
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+    - title: 'On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.08115'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The ablation that settles the debate: sound external verification helps, self-critique collapses performance, and the content of feedback barely matters — establishing that the bottleneck is verification soundness, not critique quality.'
+    - title: 'SELF-[IN]CORRECT: LLMs Struggle with Discriminating Self-Generated Responses'
+      venue: 'AAAI 2025'
+      links: {'paper': 'https://arxiv.org/abs/2404.04298'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Isolates self-discrimination from generation and shows it is weak; a controlled test showing the control signal is not causally effective even when present.'
+    - title: 'Language Models Don''t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2305.04388'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Shows chain-of-thought rationales are not faithful to the actual computation; the placebo and unfaithfulness control that invalidates rationale-based attribution of metacognitive control.'
+    - title: 'When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs'
+      venue: 'TACL 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.01297'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
+    - title: 'LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2410.02707'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows the model internally encodes truthfulness but does not act on it; the counterfactual probe establishing that signal presence is not signal use — latent monitoring is overridden by output bias.'
+    - title: 'AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2506.09038'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'A systematic benchmark in which abstention is the utility-bearing action; used to show that utility gains from monitoring can be negative if the abstention policy is miscalibrated.'
+    - title: 'LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens'
+      venue: 'EMNLP 2025'
+      links: {'paper': 'https://aclanthology.org/2025.emnlp-main.171/'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Distinguishes the intrinsic metacognitive signal from the imperfect readout, giving the mechanism-versus-measurement distinction for step-level confidence.'
+
+- section: "5.5"
+  papers:
+    - title: 'Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2408.03314'}
+      role: foundational
+      tier: A
+      deck_rank: 0
+      why: 'The axis-setting result: it defines compute-optimal allocation and shows the best distribution of a fixed budget depends on prompt difficulty, which is the formal statement of the allocation problem.'
+    - title: 'MUR: Momentum Uncertainty Guided Reasoning for Large Language Models'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://arxiv.org/abs/2507.14958', 'acl': 'https://aclanthology.org/2026.acl-long.1058'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'Replaces uniform test-time scaling with a per-step intervention trigger driven by time-aggregated uncertainty, and supplies the control knob that makes ''when to intervene'' a single tunable policy — the definitional instantiation of a monitoring-to-control hook.'
+    - title: 'Large Language Monkeys: Scaling Inference Compute with Repeated Sampling'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2407.21787'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Establishes that raw resampling scales coverage broadly across domains, setting the dumb-but-strong baseline that any smarter allocation must beat per unit of compute.'
+    - title: 'Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2408.00724'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Provides the empirical scaling law that lets a controller price strategies against each other, converting ''how much'' from a heuristic into an optimization over measured curves.'
+    - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12183'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows the budget''s marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.'
+    - title: 'Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models'
+      venue: 'TMLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.16419'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
+    - title: 'Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies'
+      venue: 'EMNLP 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.06461', 'acl': 'https://aclanthology.org/2024.emnlp-main.1112/'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The compute-matched control that deflates most intervention claims: many smarter step-level strategies fail to beat plain self-consistency at equal budget, so any claimed payoff from a trigger must survive this evaluation.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+
+- section: "5.6"
+  papers:
+    - title: 'Survey accounting: ΔU1 (L1→L0) and ΔU2 (L2→L1)'
+      venue: 'this survey (proposal)'
+      links: {}
+      role: positioning
+      tier: S
+      deck_rank: -1
+      why: 'The bookkeeping this survey proposes for cross-level comparison: ΔU1 is the gain from regulating L0 within a fixed policy, ΔU2 the gain from having learned that policy at all.'
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: A
+      deck_rank: 0
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12183'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Shows the budget''s marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.'
+    - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
+      venue: 'AAAI 2025'
+      links: {'paper': 'https://doi.org/10.1609/aaai.v39i24.34723'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Operationalizes ''genuinely metacognitive'' as ability independent of cognitive ability, giving the definition boundary a quantitative test.'
+    - title: 'Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models'
+      venue: 'TMLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.16419'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
+    - title: 'Large Language Monkeys: Scaling Inference Compute with Repeated Sampling'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2407.21787'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Establishes that raw resampling scales coverage broadly across domains, setting the dumb-but-strong baseline that any smarter allocation must beat per unit of compute.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+    - title: 'Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2408.03314'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The axis-setting result: it defines compute-optimal allocation and shows the best distribution of a fixed budget depends on prompt difficulty, which is the formal statement of the allocation problem.'
+    - title: 'When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs'
+      venue: 'TACL 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.01297'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
+    - title: 'A Survey of Confidence Estimation and Calibration in Large Language Models'
+      venue: 'NAACL 2024'
+      links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
+

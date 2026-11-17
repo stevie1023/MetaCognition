@@ -1,0 +1,139 @@
+# Bibliography: ch2 — see notes/taxonomy.yaml for the structure.
+# Two facets per entry:
+#   role  — what job the citation does in the argument
+#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   deck_rank — position in the corrected deck's citation string
+#               (-1 marks this survey's own proposal; 999 = unnamed)
+
+- section: "2.1"
+  papers:
+    - title: 'This survey: an L0 / L1 / L2 synthesis'
+      venue: 'this survey (proposal)'
+      links: {}
+      role: positioning
+      tier: S
+      deck_rank: -1
+      why: 'The organising claim itself: that cognition, regulation and learning can be separated by what each level takes as input and returns as output. Stated here so that the later claims which depend on it are visible as depending on it.'
+    - title: 'Metamemory: A Theoretical Framework and New Findings'
+      venue: 'Psychology of Learning and Motivation 1990'
+      links: {'paper': 'https://doi.org/10.1016/S0079-7421(08)60053-5'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'Formalizes the object-level/meta-level distinction and the monitoring-control duality; the canonical architecture the L0/L1 machinery inherits.'
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: D
+      deck_rank: 1
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'Common Computations for Metacognition and Meta-Metacognition'
+      venue: 'Neuroscience of Consciousness 2023'
+      links: {'paper': 'https://doi.org/10.1093/nc/niad023'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows recursive Type-2/Type-3 judgments reuse a single computation — empirical support that the loop stacks, which the L0/L1/L2 formalism requires.'
+    - title: 'Monitor-Generate-Verify: Formalising Metacognitive Theory for Language Model Reasoning'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2511.04341'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Explicitly translates Nelson-Narens and Flavell into a Monitor-Generate-Verify architecture, pinpointing where LLM reasoning pipelines silently drop the monitoring half of the loop.'
+    - title: 'Metareasoning: Thinking about Thinking'
+      venue: 'MIT Press 2011'
+      links: {'book': 'https://direct.mit.edu/books/book/2886'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The edited volume codifying meta-level control and introspective monitoring; the standard citation for the machine-side monitoring-control account.'
+
+- section: "2.2"
+  papers:
+    - title: 'Language Models (Mostly) Know What They Know'
+      venue: 'arXiv 2022'
+      links: {'paper': 'https://arxiv.org/abs/2207.05221'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.'
+    - title: 'Language Models Are Capable of Metacognitive Monitoring and Control of Their Internal Activations'
+      venue: 'NeurIPS 2025'
+      links: {'paper': 'https://arxiv.org/abs/2505.13763'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'The neurofeedback paradigm quantifying report and control of activation directions and introducing the low-dimensional metacognitive space — the central method for this subsection.'
+    - title: 'Self-Refine: Iterative Refinement with Self-Feedback'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17651', 'code': 'https://github.com/madaan/self-refine'}
+      role: representative
+      tier: B
+      deck_rank: 2
+      why: 'The canonical claim that a model can improve its own output without external feedback, and therefore the primary target of the contrast cited next.'
+    - title: 'Evidence for Limited Metacognition in Large Language Models'
+      venue: 'ICLR 2026'
+      links: {'paper': 'https://arxiv.org/abs/2509.21545'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+    - title: 'Metacognitive Myopia in Large Language Models'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2408.05568'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Argues model biases stem from missing monitoring and control, reframing apparent competence as a metacognitive deficit — a skeptical diagnostic framework.'
+    - title: 'Does It Make Sense to Speak of Introspection in Large Language Models?'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2506.05068'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.'
+    - title: 'Language Models Fail to Introspect About Their Knowledge of Language'
+      venue: 'COLM 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.07513'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'With matched-similarity baselines, shows prompted self-reports lack privileged access — evidence that many metacognitive-looking behaviours may be pattern matching.'
+    - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
+      venue: 'AAAI 2025'
+      links: {'paper': 'https://doi.org/10.1609/aaai.v39i24.34723'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Operationalizes ''genuinely metacognitive'' as ability independent of cognitive ability, giving the definition boundary a quantitative test.'
+    - title: 'Imagining and Building Wise Machines: The Centrality of AI Metacognition'
+      venue: 'Trends in Cognitive Sciences 2025'
+      links: {'paper': 'https://doi.org/10.1016/j.tics.2025.01.002'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Contrasts object-level heuristics with metacognitive strategies such as humility and perspective-taking, sharpening the object-level versus metacognitive line.'
+    - title: 'Metacognitive AI: Framework and the Case for a Neurosymbolic Approach'
+      venue: 'NeSy 2024'
+      links: {'paper': 'https://doi.org/10.1007/978-3-031-71170-1_7'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Offers the TRAP criteria (transparency, reasoning, adaptation, perception) for what counts as metacognitive AI, an alternative definitional test to compare against.'
+    - title: 'Metacognition in LLMs: Foundations, Progress, and Opportunities'
+      venue: 'arXiv 2026'
+      links: {'paper': 'https://arxiv.org/abs/2607.11881'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.'
+

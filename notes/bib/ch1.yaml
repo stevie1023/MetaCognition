@@ -1,0 +1,121 @@
+# Bibliography: ch1 — see notes/taxonomy.yaml for the structure.
+# Two facets per entry:
+#   role  — what job the citation does in the argument
+#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   deck_rank — position in the corrected deck's citation string
+#               (-1 marks this survey's own proposal; 999 = unnamed)
+
+- section: "1.1"
+  papers:
+    - title: 'Metacognition and Cognitive Monitoring: A New Area of Cognitive-Developmental Inquiry'
+      venue: 'American Psychologist 1979'
+      links: {'paper': 'https://doi.org/10.1037/0003-066X.34.10.906'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'The originating definition of metacognition — metacognitive knowledge, experience, and goals/strategies — against which every claimed LLM metacognition must be measured.'
+    - title: 'Metamemory: A Theoretical Framework and New Findings'
+      venue: 'Psychology of Learning and Motivation 1990'
+      links: {'paper': 'https://doi.org/10.1016/S0079-7421(08)60053-5'}
+      role: foundational
+      tier: D
+      deck_rank: 1
+      why: 'Formalizes the object-level/meta-level distinction and the monitoring-control duality; the canonical architecture the L0/L1 machinery inherits.'
+    - title: 'Feeling of Knowing in Memory and Problem Solving'
+      venue: 'JEP: LMC 1986'
+      links: {'paper': 'https://doi.org/10.1037/0278-7393.12.2.288'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Shows metacognitive prediction succeeds for memory but fails for insight problems — the original domain-boundary result for what monitoring can actually see.'
+    - title: 'Meta-Reasoning: Monitoring and Control of Thinking and Reasoning'
+      venue: 'Trends in Cognitive Sciences 2017'
+      links: {'paper': 'https://doi.org/10.1016/j.tics.2017.05.004'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Extends monitoring-control from memory to reasoning and problem solving, bridging the metamemory framework to the LLM reasoning setting.'
+    - title: 'Metacognition and Confidence: A Review and Synthesis'
+      venue: 'Annual Review of Psychology 2024'
+      links: {'paper': 'https://doi.org/10.1146/annurev-psych-022423-032425'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Current synthesis of human metacognition and confidence; the up-to-date psychological reference frame for term definitions.'
+    - title: 'Logic, Self-Awareness and Self-Improvement: The Metacognitive Loop and the Problem of Brittleness'
+      venue: 'Journal of Logic and Computation 2005'
+      links: {'paper': 'https://doi.org/10.1093/logcom/exh034'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'The computational branch of monitoring-control: an explicit metacognitive loop (notice-assess-guide) proposed to fix brittleness — the original ''does it transfer to machines'' argument.'
+    - title: 'Metacognition in Computation: A Selected Research Review'
+      venue: 'Artificial Intelligence 2005'
+      links: {'paper': 'https://doi.org/10.1016/j.artint.2005.10.009'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'The reference survey of monitoring-control in computational systems, establishing the lineage from metareasoning to modern agents.'
+
+- section: "1.2"
+  papers:
+    - title: 'Principles of Metareasoning'
+      venue: 'Artificial Intelligence 1991'
+      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-R'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'Defines the value of computation as the expected change in action utility minus time cost, and derives the stop-when-no-positive-value rule — the formal basis for ''is more thinking worth it''.'
+    - title: 'Resource-Rational Analysis: Understanding Human Cognition as the Optimal Use of Limited Computational Resources'
+      venue: 'Behavioral and Brain Sciences 2020'
+      links: {'paper': 'https://doi.org/10.1017/S0140525X1900061X'}
+      role: foundational
+      tier: D
+      deck_rank: 1
+      why: 'Generalizes value of computation into a full research paradigm, giving the utility-theoretic scaffolding for cost-benefit metacontrol in bounded agents.'
+    - title: 'Toward a Rational and Mechanistic Account of Mental Effort'
+      venue: 'Annual Review of Neuroscience 2017'
+      links: {'paper': 'https://doi.org/10.1146/annurev-neuro-072116-031526'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Connects value-of-computation and bounded optimality to the neuroscience of effort, supplying the normative target the LLM test-time-compute literature implicitly optimizes.'
+    - title: 'Position: LLMs Need a Bayesian Meta-Reasoning Framework'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://proceedings.mlr.press/v267/yan25g.html'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Translates value-of-computation and bounded-rationality ideas into an explicit Bayesian meta-reasoning agenda for LLMs — the bridge from this section''s theory to LLM practice.'
+    - title: 'Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
+
+- section: "1.3"
+  papers:
+    - title: 'A Signal Detection Theoretic Approach for Estimating Metacognitive Sensitivity from Confidence Ratings'
+      venue: 'Consciousness and Cognition 2012'
+      links: {'paper': 'https://doi.org/10.1016/j.concog.2011.09.021'}
+      role: foundational
+      tier: D
+      deck_rank: 0
+      why: 'Introduces meta-d-prime and the signal-detection framework separating metacognitive sensitivity from response bias; supplies the theoretical basis for AUROC-style discrimination metrics and for the argument that raw confidence is confounded by bias.'
+    - title: 'Self-Evaluation of Decision-Making: A General Bayesian Framework for Metacognitive Computation'
+      venue: 'Psychological Review 2017'
+      links: {'paper': 'https://doi.org/10.1037/rev0000045'}
+      role: foundational
+      tier: D
+      deck_rank: 1
+      why: 'Casts metacognition as second-order inference over a first-order decision system, giving the precise first-order/metacognitive boundary Section 2.1 needs.'
+    - title: 'How to Measure Metacognition'
+      venue: 'Frontiers in Human Neuroscience 2014'
+      links: {'paper': 'https://doi.org/10.3389/fnhum.2014.00443'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Defines the bias/sensitivity/efficiency triple and imports signal-detection measures, supplying the metric vocabulary the evaluation chapter adopts.'
+

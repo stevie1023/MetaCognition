@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+
+# Pre-V2 snapshot, kept locally for diffing. The V1 -> V2 reclassification is
+# reproducible from tools/migrate_v2.py + tools/conform_v2.py, so the raw
+# backups do not need to ship.
+notes/bib.v1.bak/
+notes/taxonomy.v1.bak.yaml

@@ -1,0 +1,437 @@
+# Taxonomy: Metacognition in LLMs & Autonomous Agents — single source of truth
+#
+# This file drives BOTH deliverables:
+#   - figures/figure1_taxonomy.svg   (each leaf -> one node in the main figure)
+#   - README.md                      (each leaf -> one #### section)
+# Never edit the figure or README structure directly; edit here and re-render.
+#
+# ------------------------------------------------------------------ two facets
+#
+# FACET 1 — role (逻辑作用): what job a citation does in the argument.
+#   foundational  - 奠基/定义   provides the definition or theoretical basis
+#   representative- 代表方法     representative method / technique
+#   contrast      - 对照/竞争   contrast or competing result
+#   boundary      - 边界/反例   boundary case / negative or null result
+#   benchmark     - 评测/基准   measurement, benchmark, or metric
+#   positioning   - 立场/综述   survey, position, or framing work
+#
+# FACET 2 — tier (证据层级): how directly the work bears on the claim.
+#   D - primary metacognitive study; directly studies the stated concept
+#   A - adjacent / enabling; supplies machinery the metacognitive claim uses
+#   B - boundary; tests or limits the claim
+#   S - survey synthesis / this survey's own analytical proposal
+#
+# Both facets are recorded per paper. The tier mediates how much weight a
+# citation may carry: only D-tier evidence is allowed to ground a positive
+# claim about metacognition itself.
+#
+# status: draft = awaiting user approval; locked = user approved, safe to build on
+
+meta:
+  title: "Metacognition in Large Language Models & Autonomous Agents"
+  subtitle: "An L0–L2 taxonomy of representing, regulating, and learning cognition"
+  tagline: "with utility-aware evaluation and a bounded RSI extension"
+  status: draft
+  version: 0.2
+
+# ------------------------------------------------------------------ levels
+# The level thread that runs through the whole paper. Chapters map onto it.
+#   short = the abbreivated form the figure prints in the left gutter
+#   desc  = the one-line gloss under it (same words in figure and README)
+levels:
+  - id: THEORY
+    en: "Theory"
+    short: "THEORY"
+    zh: "理论"
+    desc: "Concepts / rationality"
+    long: "What metacognition is, and what it is worth."
+  - id: FRAMEWORK
+    en: "L0–L2 Framework"
+    short: "L0–L2"
+    zh: "L0–L2 框架"
+    desc: "Operational boundary"
+    long: "The operational boundary between the three levels."
+  - id: L1REP
+    en: "Level 1 — Represent"
+    short: "L1 · REPRESENT"
+    zh: "一阶表征"
+    desc: "L0 → L1 information"
+    long: "Internal signals about one's own cognitive state."
+  - id: L1REG
+    en: "Level 1 — Regulate"
+    short: "L1 · REGULATE"
+    zh: "一阶调控"
+    desc: "L1 → L0 intervention"
+    long: "Acting on those signals: when / what / how much."
+  - id: EVAL
+    en: "Evaluation (cross-level, not a level)"
+    short: "CROSS-LEVEL EVAL"
+    zh: "评测（横跨层级，非独立层级）"
+    desc: "Not a new cognitive level"
+    long: "Signal validity × realized decision utility."
+  - id: L2
+    en: "Level 2 — Learn"
+    short: "L2 · LEARN"
+    zh: "二阶学习"
+    desc: "Updates L1 mechanism"
+    long: "Improving the monitor and the controller."
+  - id: REC
+    en: "Recursive Extension"
+    short: "RECURSIVE EXT."
+    zh: "递归扩展"
+    desc: "Beyond routine learning"
+    long: "Metacognition applied to the improver itself."
+  - id: GAPS
+    en: "Research Gaps"
+    short: "RESEARCH GAPS"
+    zh: "开放挑战"
+    desc: "Definitions / causality / risk"
+    long: "What the framework cannot yet settle."
+
+# ------------------------------------------------------------------ relation
+# The L0 -> L1 -> L2 loop, as drawn above the taxonomy in the figure.
+# `analytical synthesis`: the loop is this survey's organising claim, not a
+# result attributed to any single cited paper.
+relation:
+  title: "HIERARCHICAL RELATION"
+  note: "analytical synthesis"
+  nodes:
+    - id: L0
+      name: "L0 · Cognitive execution"
+      desc: "Task state → reasoning / action"
+    - id: L1
+      name: "L1 · Monitor → Expected utility → Control"
+      desc: "Observe L0 cognition; choose when / what / how much to regulate"
+    - id: L2
+      name: "L2 · Learn M / Q / policy"
+      desc: "Experience → improved regulation"
+  edges:
+    - { from: "L0", to: "L1", label: "state / trace" }
+    - { from: "L1", to: "L0", label: "control action" }
+    - { from: "L2", to: "L1", label: "policy update" }
+    - { from: "L1", to: "L2", label: "outcomes / credit" }
+  statement: "Evaluation spans levels: signal validity | realized decision utility | compute-matched ΔU1 (L1→L0) | improvement gain ΔU2 (L2→L1)"
+  caveat: "RSI is a recursive extension, not Level 3."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: ch1
+    num: "1"
+    en: "Foundations"
+    zh: "基础"
+    level: THEORY
+    tag: "Concepts / rationality"
+  - id: ch2
+    num: "2"
+    en: "Hierarchical Framework"
+    zh: "层级框架"
+    level: FRAMEWORK
+    tag: "Operational boundary"
+  - id: ch3
+    num: "3"
+    en: "Metacognitive Monitoring"
+    zh: "元认知监控"
+    level: L1REP
+    tag: "L0 → L1 information"
+  - id: ch4
+    num: "4"
+    en: "Metacognitive Decision & Control"
+    zh: "元认知决策与控制"
+    level: L1REG
+    tag: "L1 → L0 intervention"
+  - id: ch5
+    num: "5"
+    en: "Evaluation of Metacognitive Utility"
+    zh: "元认知效用评测"
+    level: EVAL
+    tag: "Not a new cognitive level"
+  - id: ch6
+    num: "6"
+    en: "Meta-Regulation"
+    zh: "元调控"
+    level: L2
+    tag: "Updates L1 mechanism"
+  - id: ch7
+    num: "7"
+    en: "Toward Recursive Self-Improvement"
+    zh: "走向递归自我改进"
+    level: REC
+    tag: "Beyond routine learning"
+  - id: ch8
+    num: "8"
+    en: "Open Challenges"
+    zh: "开放挑战"
+    level: GAPS
+    tag: "Definitions / causality / risk"
+
+# ------------------------------------------------------------------ leaves
+# Each leaf is a sub-question / mechanism. It becomes one figure node AND one
+# README section. Papers live in notes/bib/*.yaml keyed by `id`.
+sections:
+
+  # ---- Chapter 1 — Foundations
+  - chapter: ch1
+    id: "1.1"
+    en: "Object-level vs. meta-level cognition"
+    zh: "对象层与元层认知"
+    question: "Where is the line between a first-order process and a metacognitive one?"
+    papers: []
+
+  - chapter: ch1
+    id: "1.2"
+    en: "Metareasoning and Value of Computation"
+    zh: "元推理与计算价值"
+    question: "How should a rational agent decide whether more computation is worth it?"
+    papers: []
+
+  - chapter: ch1
+    id: "1.3"
+    en: "Self-evaluation and metacognitive measurement"
+    zh: "自我评价与元认知测量"
+    question: "How is the accuracy of a self-evaluation quantified at all?"
+    papers: []
+
+  # ---- Chapter 2 — Hierarchical Framework
+  - chapter: ch2
+    id: "2.1"
+    en: "Cognition (L0), regulation (L1), learning (L2)"
+    zh: "认知(L0)、调控(L1)、学习(L2)"
+    question: "Can metacognitive levels be given a precise, composable formalism?"
+    papers: []
+
+  - chapter: ch2
+    id: "2.2"
+    en: "Boundary: monitoring vs. routine reflection"
+    zh: "边界：监控 vs. 例行反思"
+    question: "Which LLM behaviours are genuinely metacognitive, and which merely resemble it?"
+    papers: []
+
+  # ---- Chapter 3 — Monitoring (Level 1 Representation)
+  - chapter: ch3
+    id: "3.1"
+    en: "Outcome confidence and calibration"
+    zh: "结果置信度与校准"
+    question: "Can a model report how likely it is to be right, and is that report well-calibrated?"
+    papers: []
+
+  - chapter: ch3
+    id: "3.2"
+    en: "Knowledge boundaries and abstention"
+    zh: "知识边界与拒答"
+    question: "Does the model know what it does not know, and can it act on that?"
+    papers: []
+
+  - chapter: ch3
+    id: "3.3"
+    en: "Process states and evolving uncertainty"
+    zh: "过程状态与演化中的不确定性"
+    question: "How can internal states serve as signals about ongoing reasoning?"
+    papers: []
+
+  - chapter: ch3
+    id: "3.4"
+    en: "Completion risk, progress and overthinking"
+    zh: "完成风险、进展与过度思考"
+    question: "Can impending failure or wasted computation be foreseen mid-trajectory?"
+    papers: []
+
+  - chapter: ch3
+    id: "3.5"
+    en: "Signal access: reports, logits and probes"
+    zh: "信号获取：自陈、logits 与探针"
+    question: "Through which channel can a monitoring signal actually be read out?"
+    papers: []
+
+  # ---- Chapter 4 — Decision & Control (Level 1 Regulation)
+  - chapter: ch4
+    id: "4.1"
+    en: "When to intervene: trigger or stop"
+    zh: "何时干预：触发或停止"
+    question: "At which step does extra computation actually pay off?"
+    papers: []
+
+  - chapter: ch4
+    id: "4.2"
+    en: "How: search, decomposition, replanning"
+    zh: "如何：搜索、分解、重规划"
+    question: "Which reasoning strategy should be invoked at this state?"
+    papers: []
+
+  - chapter: ch4
+    id: "4.3"
+    en: "How: retrieval, tools and escalation"
+    zh: "如何：检索、工具与升级"
+    question: "When should the model reach outside itself?"
+    papers: []
+
+  - chapter: ch4
+    id: "4.4"
+    en: "How: verification and self-correction"
+    zh: "如何：验证与自我纠正"
+    question: "When does self-correction actually help rather than hurt?"
+    papers: []
+
+  - chapter: ch4
+    id: "4.5"
+    en: "How much: adaptive reasoning budget"
+    zh: "多少：自适应推理预算"
+    question: "How should a fixed compute budget be spread across a trajectory?"
+    papers: []
+
+  - chapter: ch4
+    id: "4.6"
+    en: "Unified cost-aware and light controllers"
+    zh: "统一的成本感知与轻量控制器"
+    question: "Can control decisions be grounded in expected utility rather than heuristics?"
+    papers: []
+
+  # ---- Chapter 5 — Evaluation
+  - chapter: ch5
+    id: "5.1"
+    en: "Monitoring accuracy and calibration"
+    zh: "监控准确性与校准"
+    question: "How do we score the quality of a monitoring signal?"
+    papers: []
+
+  - chapter: ch5
+    id: "5.2"
+    en: "Decision utility: quality–cost trade-off"
+    zh: "决策效用：质量—成本权衡"
+    question: "How do we score the value of a control decision?"
+    papers: []
+
+  - chapter: ch5
+    id: "5.3"
+    en: "Expected vs. realized intervention utility"
+    zh: "预期干预效用与实际效用"
+    question: "Does the controller's ex-ante estimate match the ex-post gain?"
+    papers: []
+
+  - chapter: ch5
+    id: "5.4"
+    en: "Counterfactual controls and attribution"
+    zh: "反事实控制与归因"
+    question: "How do we know the intervention caused the improvement?"
+    papers: []
+
+  - chapter: ch5
+    id: "5.5"
+    en: "Compute-matched comparisons and regret"
+    zh: "匹配预算的比较与 regret"
+    question: "Is a metacognitive method better, or just more expensive?"
+    papers: []
+
+  - chapter: ch5
+    id: "5.6"
+    en: "Cross-level gains: regulation vs. learning"
+    zh: "跨层收益：调控 vs. 学习"
+    question: "How much does each level buy over the one below it?"
+    papers: []
+
+  # ---- Chapter 6 — Meta-Regulation (Level 2 Learning)
+  - chapter: ch6
+    id: "6.1"
+    en: "Learning a monitor / evaluator"
+    zh: "学习监控器 / 评估器"
+    question: "Can monitoring ability itself be trained and improved?"
+    papers: []
+
+  - chapter: ch6
+    id: "6.2"
+    en: "Learning control and correction policies"
+    zh: "学习控制与纠正策略"
+    question: "Can the control policy be learned rather than hand-designed?"
+    papers: []
+
+  - chapter: ch6
+    id: "6.3"
+    en: "Feedback-driven meta-policy updates"
+    zh: "反馈驱动的元策略更新"
+    question: "How does feedback from one episode change the next?"
+    papers: []
+
+  - chapter: ch6
+    id: "6.4"
+    en: "From episodes to reusable meta-knowledge"
+    zh: "从情节经验到可复用元知识"
+    question: "How is per-episode experience distilled into durable meta-knowledge?"
+    papers: []
+
+  - chapter: ch6
+    id: "6.5"
+    en: "Cross-task transfer and adaptation"
+    zh: "跨任务迁移与适应"
+    question: "Does meta-knowledge transfer beyond the task that produced it?"
+    papers: []
+
+  # ---- Chapter 7 — Toward Recursive Self-Improvement
+  - chapter: ch7
+    id: "7.1"
+    en: "Propose and select self-modifications"
+    zh: "提出并选择自我修改"
+    question: "How does an agent decide which self-modification to attempt?"
+    papers: []
+
+  - chapter: ch7
+    id: "7.2"
+    en: "Validate candidates and gate updates"
+    zh: "验证候选并把关更新"
+    question: "What stops a harmful self-modification from being adopted?"
+    papers: []
+
+  - chapter: ch7
+    id: "7.3"
+    en: "Improve the improvement mechanism"
+    zh: "改进自身的改进机制"
+    question: "Can the meta-level learners themselves be improved?"
+    papers: []
+
+  - chapter: ch7
+    id: "7.4"
+    en: "Future improvement potential / metaproductivity"
+    zh: "未来改进潜力 / 元生产力"
+    question: "Can an agent estimate how much its own future improvement is worth?"
+    papers: []
+
+  - chapter: ch7
+    id: "7.5"
+    en: "Boundary: self-improvement is not full RSI"
+    zh: "边界：自改进并不等于完整 RSI"
+    question: "What separates ordinary self-improvement from genuine recursive self-improvement?"
+    papers: []
+
+  # ---- Chapter 8 — Open Challenges
+  - chapter: ch8
+    id: "8.1"
+    en: "Operational definition and self-access"
+    zh: "操作化定义与自我访问"
+    question: "The field still lacks an agreed operational definition."
+    papers: []
+
+  - chapter: ch8
+    id: "8.2"
+    en: "Causal value of monitoring signals"
+    zh: "监控信号的因果价值"
+    question: "Correlational probes are not evidence that the signal is used."
+    papers: []
+
+  - chapter: ch8
+    id: "8.3"
+    en: "OOD calibration and controller transfer"
+    zh: "分布外校准与控制器迁移"
+    question: "Do learned controllers transfer across tasks and models?"
+    papers: []
+
+  - chapter: ch8
+    id: "8.4"
+    en: "Metacognitive credit and feedback reliability"
+    zh: "元认知信用分配与反馈可靠性"
+    question: "Can credit for success be attributed to the right metacognitive decision?"
+    papers: []
+
+  - chapter: ch8
+    id: "8.5"
+    en: "Long-horizon stability and oversight"
+    zh: "长时程稳定性与监督"
+    question: "Is there a principled limit on stable recursive self-improvement?"
+    papers: []

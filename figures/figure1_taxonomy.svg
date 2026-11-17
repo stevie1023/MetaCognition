@@ -1,0 +1,262 @@
+<svg viewBox="0 0 2380 2121" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" role="img">
+<title>Metacognition in large language models: a level-structured taxonomy</title>
+<desc>A nested taxonomy panel. The masthead carries a hierarchical relation diagram linking L0 cognitive execution, L1 monitoring and control, and L2 learning. Below it, each level band is a rounded container holding the chapter that belongs to it; every chapter branches into its sub-questions, each of which carries a compact citation string of its representative works, prefixed by evidence tier D (primary metacognitive study), A (adjacent or enabling), B (boundary), or S (survey synthesis). The bands run from theoretical foundations through the L0-L2 framework, Level 1 representation, Level 1 regulation, cross-level evaluation, Level 2 learning, and the recursive extension, ending in research gaps.</desc>
+<rect x="0" y="0" width="2380" height="2121" fill="#FFFFFF"/>
+<rect x="44" y="106.0" width="2292" height="186.0" rx="13" fill="#FAFAF7" stroke="#E2DFD6" stroke-width="1"/>
+<rect x="44" y="323.0" width="2292" height="166.0" rx="15" fill="#F1F0EA" stroke="#DAD5C9" stroke-width="1"/>
+<rect x="44" y="476.0" width="2292" height="125.0" rx="15" fill="#E9F5F4" stroke="#C4E0DE" stroke-width="1"/>
+<rect x="44" y="588.0" width="2292" height="248.0" rx="15" fill="#EAF3FC" stroke="#C7DCF0" stroke-width="1"/>
+<rect x="44" y="823.0" width="2292" height="289.0" rx="15" fill="#ECF0FA" stroke="#C6CFEA" stroke-width="1"/>
+<rect x="44" y="1099.0" width="2292" height="289.0" rx="15" fill="#FBF4E4" stroke="#EBDABA" stroke-width="1"/>
+<rect x="44" y="1375.0" width="2292" height="248.0" rx="15" fill="#F1EFFC" stroke="#D5CFEF" stroke-width="1"/>
+<rect x="44" y="1610.0" width="2292" height="248.0" rx="15" fill="#FAEDF6" stroke="#EBCDE2" stroke-width="1"/>
+<rect x="44" y="1845.0" width="2292" height="248.0" rx="15" fill="#FCEDEC" stroke="#EFD2D1" stroke-width="1"/>
+<rect x="732" y="340.0" width="1560" height="141.0" rx="12" fill="#FFFFFF" stroke="#DAD5C9" stroke-width="1"/>
+<rect x="732" y="493.0" width="1560" height="100.0" rx="12" fill="#FFFFFF" stroke="#C4E0DE" stroke-width="1"/>
+<rect x="732" y="605.0" width="1560" height="223.0" rx="12" fill="#FFFFFF" stroke="#C7DCF0" stroke-width="1"/>
+<rect x="732" y="840.0" width="1560" height="264.0" rx="12" fill="#FFFFFF" stroke="#C6CFEA" stroke-width="1"/>
+<rect x="732" y="1116.0" width="1560" height="264.0" rx="12" fill="#FFFFFF" stroke="#EBDABA" stroke-width="1"/>
+<rect x="732" y="1392.0" width="1560" height="223.0" rx="12" fill="#FFFFFF" stroke="#D5CFEF" stroke-width="1"/>
+<rect x="732" y="1627.0" width="1560" height="223.0" rx="12" fill="#FFFFFF" stroke="#EBCDE2" stroke-width="1"/>
+<rect x="732" y="1862.0" width="1560" height="223.0" rx="12" fill="#FFFFFF" stroke="#EFD2D1" stroke-width="1"/>
+<path d="M 696 410.5 H 732" fill="none" stroke="#DAD5C9" stroke-width="1"/>
+<path d="M 696 543.0 H 732" fill="none" stroke="#C4E0DE" stroke-width="1"/>
+<path d="M 696 716.5 H 732" fill="none" stroke="#C7DCF0" stroke-width="1"/>
+<path d="M 696 972.0 H 732" fill="none" stroke="#C6CFEA" stroke-width="1"/>
+<path d="M 696 1248.0 H 732" fill="none" stroke="#EBDABA" stroke-width="1"/>
+<path d="M 696 1503.5 H 732" fill="none" stroke="#D5CFEF" stroke-width="1"/>
+<path d="M 696 1738.5 H 732" fill="none" stroke="#EBCDE2" stroke-width="1"/>
+<path d="M 696 1973.5 H 732" fill="none" stroke="#EFD2D1" stroke-width="1"/>
+<path d="M 662.7142857142857 160.0 H 737.7142857142857" fill="none" stroke="#9A9488" stroke-width="1.2"/>
+<text x="744.7" y="163.6" font-size="10" font-weight="400" fill="#9A9488" text-anchor="middle">▶</text>
+<path d="M 744.7142857142857 216.0 H 669.7142857142857" fill="none" stroke="#B9B2A2" stroke-width="1.2"/>
+<text x="662.7" y="219.6" font-size="10" font-weight="400" fill="#B9B2A2" text-anchor="middle">◀</text>
+<path d="M 1702.3179723502303 160.0 H 1777.3179723502303" fill="none" stroke="#9A9488" stroke-width="1.2"/>
+<text x="1784.3" y="163.6" font-size="10" font-weight="400" fill="#9A9488" text-anchor="middle">▶</text>
+<path d="M 1784.3179723502303 216.0 H 1709.3179723502303" fill="none" stroke="#B9B2A2" stroke-width="1.2"/>
+<text x="1702.3" y="219.6" font-size="10" font-weight="400" fill="#B9B2A2" text-anchor="middle">◀</text>
+<rect x="69.0" y="146.0" width="593.7" height="68.0" rx="10" fill="#FFFFFF" stroke="#DAD5C9" stroke-width="0.8"/>
+<rect x="70.0" y="159.0" width="4.0" height="42.0" rx="2" fill="#7E7A6B"/>
+<rect x="744.7" y="146.0" width="957.6" height="68.0" rx="10" fill="#FFFFFF" stroke="#DAD5C9" stroke-width="0.8"/>
+<rect x="745.7" y="159.0" width="4.0" height="42.0" rx="2" fill="#3B7DC4"/>
+<rect x="1784.3" y="146.0" width="526.7" height="68.0" rx="10" fill="#FFFFFF" stroke="#DAD5C9" stroke-width="0.8"/>
+<rect x="1785.3" y="159.0" width="4.0" height="42.0" rx="2" fill="#6A5AC4"/>
+<rect x="62.0" y="337.0" width="5.0" height="138.0" rx="2.5" fill="#7E7A6B"/>
+<rect x="62.0" y="490.0" width="5.0" height="97.0" rx="2.5" fill="#3E8A87"/>
+<rect x="62.0" y="602.0" width="5.0" height="220.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="62.0" y="837.0" width="5.0" height="261.0" rx="2.5" fill="#4056A8"/>
+<rect x="62.0" y="1113.0" width="5.0" height="261.0" rx="2.5" fill="#B78A3C"/>
+<rect x="62.0" y="1389.0" width="5.0" height="220.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="62.0" y="1624.0" width="5.0" height="220.0" rx="2.5" fill="#94407E"/>
+<rect x="62.0" y="1859.0" width="5.0" height="220.0" rx="2.5" fill="#B2524D"/>
+<rect x="404.0" y="390.5" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#DAD5C9" stroke-width="0.8"/>
+<rect x="405.0" y="399.5" width="3.5" height="22.0" rx="1.75" fill="#7E7A6B"/>
+<rect x="739.5" y="361.5" width="5.0" height="5.0" rx="2.5" fill="#7E7A6B"/>
+<rect x="739.5" y="402.5" width="5.0" height="5.0" rx="2.5" fill="#7E7A6B"/>
+<rect x="739.5" y="443.5" width="5.0" height="5.0" rx="2.5" fill="#7E7A6B"/>
+<rect x="404.0" y="523.0" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#C4E0DE" stroke-width="0.8"/>
+<rect x="405.0" y="532.0" width="3.5" height="22.0" rx="1.75" fill="#3E8A87"/>
+<rect x="739.5" y="514.5" width="5.0" height="5.0" rx="2.5" fill="#3E8A87"/>
+<rect x="739.5" y="555.5" width="5.0" height="5.0" rx="2.5" fill="#3E8A87"/>
+<rect x="404.0" y="696.5" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#C7DCF0" stroke-width="0.8"/>
+<rect x="405.0" y="705.5" width="3.5" height="22.0" rx="1.75" fill="#3B7DC4"/>
+<rect x="739.5" y="626.5" width="5.0" height="5.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="739.5" y="667.5" width="5.0" height="5.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="739.5" y="708.5" width="5.0" height="5.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="739.5" y="749.5" width="5.0" height="5.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="739.5" y="790.5" width="5.0" height="5.0" rx="2.5" fill="#3B7DC4"/>
+<rect x="404.0" y="952.0" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#C6CFEA" stroke-width="0.8"/>
+<rect x="405.0" y="961.0" width="3.5" height="22.0" rx="1.75" fill="#4056A8"/>
+<rect x="739.5" y="861.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="739.5" y="902.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="739.5" y="943.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="739.5" y="984.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="739.5" y="1025.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="739.5" y="1066.5" width="5.0" height="5.0" rx="2.5" fill="#4056A8"/>
+<rect x="404.0" y="1228.0" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#EBDABA" stroke-width="0.8"/>
+<rect x="405.0" y="1237.0" width="3.5" height="22.0" rx="1.75" fill="#B78A3C"/>
+<rect x="739.5" y="1137.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="739.5" y="1178.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="739.5" y="1219.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="739.5" y="1260.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="739.5" y="1301.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="739.5" y="1342.5" width="5.0" height="5.0" rx="2.5" fill="#B78A3C"/>
+<rect x="404.0" y="1483.5" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#D5CFEF" stroke-width="0.8"/>
+<rect x="405.0" y="1492.5" width="3.5" height="22.0" rx="1.75" fill="#6A5AC4"/>
+<rect x="739.5" y="1413.5" width="5.0" height="5.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="739.5" y="1454.5" width="5.0" height="5.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="739.5" y="1495.5" width="5.0" height="5.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="739.5" y="1536.5" width="5.0" height="5.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="739.5" y="1577.5" width="5.0" height="5.0" rx="2.5" fill="#6A5AC4"/>
+<rect x="404.0" y="1718.5" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#EBCDE2" stroke-width="0.8"/>
+<rect x="405.0" y="1727.5" width="3.5" height="22.0" rx="1.75" fill="#94407E"/>
+<rect x="739.5" y="1648.5" width="5.0" height="5.0" rx="2.5" fill="#94407E"/>
+<rect x="739.5" y="1689.5" width="5.0" height="5.0" rx="2.5" fill="#94407E"/>
+<rect x="739.5" y="1730.5" width="5.0" height="5.0" rx="2.5" fill="#94407E"/>
+<rect x="739.5" y="1771.5" width="5.0" height="5.0" rx="2.5" fill="#94407E"/>
+<rect x="739.5" y="1812.5" width="5.0" height="5.0" rx="2.5" fill="#94407E"/>
+<rect x="404.0" y="1953.5" width="292.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#EFD2D1" stroke-width="0.8"/>
+<rect x="405.0" y="1962.5" width="3.5" height="22.0" rx="1.75" fill="#B2524D"/>
+<rect x="739.5" y="1883.5" width="5.0" height="5.0" rx="2.5" fill="#B2524D"/>
+<rect x="739.5" y="1924.5" width="5.0" height="5.0" rx="2.5" fill="#B2524D"/>
+<rect x="739.5" y="1965.5" width="5.0" height="5.0" rx="2.5" fill="#B2524D"/>
+<rect x="739.5" y="2006.5" width="5.0" height="5.0" rx="2.5" fill="#B2524D"/>
+<rect x="739.5" y="2047.5" width="5.0" height="5.0" rx="2.5" fill="#B2524D"/>
+<text x="69.0" y="124.0" font-size="11" font-weight="700" fill="#5A564B">HIERARCHICAL RELATION</text>
+<text x="208.9" y="124.0" font-size="9.5" font-weight="400" fill="#9B978C">(analytical synthesis)</text>
+<text x="89.0" y="176.0" font-size="13.5" font-weight="600" fill="#33312B">L0 · Cognitive execution</text>
+<text x="89.0" y="197.0" font-size="10.5" font-weight="400" fill="#6E6A60">Task state → reasoning / action</text>
+<text x="764.7" y="176.0" font-size="13.5" font-weight="600" fill="#1B4F79">L1 · Monitor → Expected utility → Control</text>
+<text x="764.7" y="197.0" font-size="10.5" font-weight="400" fill="#557896">Observe L0 cognition; choose when / what / how much to regulate</text>
+<text x="1804.3" y="176.0" font-size="13.5" font-weight="600" fill="#3A2E82">L2 · Learn M / Q / policy</text>
+<text x="1804.3" y="197.0" font-size="10.5" font-weight="400" fill="#6A5CAC">Experience → improved regulation</text>
+<text x="703.7" y="151.0" font-size="9.5" font-weight="500" fill="#6E6A60" text-anchor="middle">state / trace</text>
+<text x="703.7" y="207.0" font-size="9.5" font-weight="500" fill="#6E6A60" text-anchor="middle">control action</text>
+<text x="1743.3" y="151.0" font-size="9.5" font-weight="500" fill="#6E6A60" text-anchor="middle">outcomes / credit</text>
+<text x="1743.3" y="207.0" font-size="9.5" font-weight="500" fill="#6E6A60" text-anchor="middle">policy update</text>
+<text x="69.0" y="262.0" font-size="10" font-weight="500" fill="#5A564B">Evaluation spans levels: signal validity | realized decision utility | compute-matched ΔU1 (L1→L0) | improvement gain ΔU2 (L2→L1)</text>
+<text x="69.0" y="282.0" font-size="9.5" font-weight="600" fill="#8A7240">RSI is a recursive extension, not Level 3.</text>
+<text x="84.0" y="400.5" font-size="12.5" font-weight="700" fill="#33312B">THEORY</text>
+<text x="84.0" y="417.5" font-size="9.5" font-weight="400" fill="#6E6A60">Concepts / rationality</text>
+<text x="84.0" y="533.0" font-size="12.5" font-weight="700" fill="#1D5350">L0–L2</text>
+<text x="84.0" y="550.0" font-size="9.5" font-weight="400" fill="#568480">Operational boundary</text>
+<text x="84.0" y="706.5" font-size="12.5" font-weight="700" fill="#1B4F79">L1 · REPRESENT</text>
+<text x="84.0" y="723.5" font-size="9.5" font-weight="400" fill="#557896">L0 → L1 information</text>
+<text x="84.0" y="962.0" font-size="12.5" font-weight="700" fill="#25326E">L1 · REGULATE</text>
+<text x="84.0" y="979.0" font-size="9.5" font-weight="400" fill="#5A6791">L1 → L0 intervention</text>
+<text x="84.0" y="1238.0" font-size="12.5" font-weight="700" fill="#6F5314">CROSS-LEVEL EVAL</text>
+<text x="84.0" y="1255.0" font-size="9.5" font-weight="400" fill="#8A7240">Not a new cognitive level</text>
+<text x="84.0" y="1493.5" font-size="12.5" font-weight="700" fill="#3A2E82">L2 · LEARN</text>
+<text x="84.0" y="1510.5" font-size="9.5" font-weight="400" fill="#6A5CAC">Updates L1 mechanism</text>
+<text x="84.0" y="1728.5" font-size="12.5" font-weight="700" fill="#5E2050">RECURSIVE EXT.</text>
+<text x="84.0" y="1745.5" font-size="9.5" font-weight="400" fill="#8E5A80">Beyond routine learning</text>
+<text x="84.0" y="1963.5" font-size="12.5" font-weight="700" fill="#752724">RESEARCH GAPS</text>
+<text x="84.0" y="1980.5" font-size="9.5" font-weight="400" fill="#985A56">Definitions / causality / risk</text>
+<text x="422.0" y="415.5" font-size="12.5" font-weight="600" fill="#33312B">1 · Foundations</text>
+<text x="758.0" y="365.0" font-size="11" font-weight="600" fill="#7E7A6B">1.1</text>
+<text x="783.0" y="365.0" font-size="11" font-weight="400" fill="#26251F">Object-level vs. meta-level cognition</text>
+<text x="1188.0" y="365.0" font-size="9.5" font-weight="400" fill="#6E6A60">D  Metacognition (Am. Psychol. 1979), D  Metamemory (Psych. Learn. Motiv. 1990), D  Feeling of Knowing (JEP: LMC 1986), D  Meta-Reasoning (TiCS 2017), D  Logic, Self-Awareness (J. Log. Comput. 2005), etc.</text>
+<text x="758.0" y="406.0" font-size="11" font-weight="600" fill="#7E7A6B">1.2</text>
+<text x="783.0" y="406.0" font-size="11" font-weight="400" fill="#26251F">Metareasoning and Value of Computation</text>
+<text x="1188.0" y="406.0" font-size="9.5" font-weight="400" fill="#6E6A60">D  Principles (Artif. Intell. 1991), D  Resource-Rational Analysis (Behav. Brain Sci. 2020), D  Mental Effort (Annu. Rev. Neurosci. 2017), S  Bayesian Meta-Reasoning (ICML 2025), etc.</text>
+<text x="758.0" y="447.0" font-size="11" font-weight="600" fill="#7E7A6B">1.3</text>
+<text x="783.0" y="447.0" font-size="11" font-weight="400" fill="#26251F">Self-evaluation and metacognitive measurement</text>
+<text x="1188.0" y="447.0" font-size="9.5" font-weight="400" fill="#6E6A60">D  Meta-d′ / Signal Detection (Consciousness and Cognition 2012), D  Self-Evaluation (Psychol. Rev. 2017), D  Measuring Metacognition (Front. Hum. Neurosci. 2014)</text>
+<text x="422.0" y="548.0" font-size="12.5" font-weight="600" fill="#1D5350">2 · Hierarchical Framework</text>
+<text x="758.0" y="518.0" font-size="11" font-weight="600" fill="#3E8A87">2.1</text>
+<text x="783.0" y="518.0" font-size="11" font-weight="400" fill="#26251F">Cognition (L0), regulation (L1), learning (L2)</text>
+<text x="1188.0" y="518.0" font-size="9.5" font-weight="400" fill="#568480">S  This survey (this survey (proposal)), D  Metamemory (Psych. Learn. Motiv. 1990), D  MC² Consolidation (ACL 2026), D  Common Computations (Neurosci. Conscious. 2023), etc.</text>
+<text x="758.0" y="559.0" font-size="11" font-weight="600" fill="#3E8A87">2.2</text>
+<text x="783.0" y="559.0" font-size="11" font-weight="400" fill="#26251F">Boundary: monitoring vs. routine reflection</text>
+<text x="1188.0" y="559.0" font-size="9.5" font-weight="400" fill="#568480">D  (Mostly) Know What They Know (arXiv 2022), D  Monitoring of Internal Activations (NeurIPS 2025), B  Self-Refine (NeurIPS 2023), D  Decoupling Metacognition (AAAI 2025), etc.</text>
+<text x="422.0" y="721.5" font-size="12.5" font-weight="600" fill="#1B4F79">3 · Metacognitive Monitoring</text>
+<text x="758.0" y="630.0" font-size="11" font-weight="600" fill="#3B7DC4">3.1</text>
+<text x="783.0" y="630.0" font-size="11" font-weight="400" fill="#26251F">Outcome confidence and calibration</text>
+<text x="1188.0" y="630.0" font-size="9.5" font-weight="400" fill="#557896">D  (Mostly) Know What They Know (arXiv 2022), D  Semantic Uncertainty (ICLR 2023), D  Express Uncertainty in Words (TMLR 2022), D  Just Ask for Calibration (EMNLP 2023), D  Linguistic Calibration (TACL 2022), etc.</text>
+<text x="758.0" y="671.0" font-size="11" font-weight="600" fill="#3B7DC4">3.2</text>
+<text x="783.0" y="671.0" font-size="11" font-weight="400" fill="#26251F">Knowledge boundaries and abstention</text>
+<text x="1188.0" y="671.0" font-size="9.5" font-weight="400" fill="#557896">D  R-Tuning (NAACL 2024), D  SelfAware (ACL Findings 2023), D  Know How Much They Know (EMNLP 2024), A  Knowledge of Knowledge (ACL Findings 2024), B  Capability Awareness (ICLR 2026), etc.</text>
+<text x="758.0" y="712.0" font-size="11" font-weight="600" fill="#3B7DC4">3.3</text>
+<text x="783.0" y="712.0" font-size="11" font-weight="400" fill="#26251F">Process states and evolving uncertainty</text>
+<text x="1188.0" y="712.0" font-size="9.5" font-weight="400" fill="#557896">D  MUR (ACL 2026), D  Monitoring of Internal Activations (NeurIPS 2025), D  CCS (ICLR 2023), D  Semantic Entropy Probes (arXiv 2024), D  Do I Know This Entity? (ICLR 2025), etc.</text>
+<text x="758.0" y="753.0" font-size="11" font-weight="600" fill="#3B7DC4">3.4</text>
+<text x="783.0" y="753.0" font-size="11" font-weight="400" fill="#26251F">Completion risk, progress and overthinking</text>
+<text x="1188.0" y="753.0" font-size="9.5" font-weight="400" fill="#557896">D  Capability Awareness (ICLR 2026), A  Overthinking of o1-Like LLMs (ICML 2025), D  Danger of Overthinking (arXiv 2025), D  Decoupling Metacognition (AAAI 2025), D  Intrinsic Meta-Cognition (EMNLP 2025), etc.</text>
+<text x="758.0" y="794.0" font-size="11" font-weight="600" fill="#3B7DC4">3.5</text>
+<text x="783.0" y="794.0" font-size="11" font-weight="400" fill="#26251F">Signal access: reports, logits and probes</text>
+<text x="1188.0" y="794.0" font-size="9.5" font-weight="400" fill="#557896">D  (Mostly) Know What They Know (arXiv 2022), A  Semantic Entropy Probes (arXiv 2024), D  Monitoring of Internal Activations (NeurIPS 2025), D  Looking Inward (ICLR 2025), etc.</text>
+<text x="422.0" y="977.0" font-size="12.5" font-weight="600" fill="#25326E">4 · Decision &amp; Control</text>
+<text x="758.0" y="865.0" font-size="11" font-weight="600" fill="#4056A8">4.1</text>
+<text x="783.0" y="865.0" font-size="11" font-weight="400" fill="#26251F">When to intervene: trigger or stop</text>
+<text x="1188.0" y="865.0" font-size="9.5" font-weight="400" fill="#5A6791">D  Self-RAG (ICLR 2024), D  MUR (ACL 2026), D  Dynamic Early Exit (arXiv 2025), D  Entropy After Thinking (arXiv 2025), D  Phi-Decoding (ACL 2025), D  Adaptive Inference-Time Compute (arXiv 2024), etc.</text>
+<text x="758.0" y="906.0" font-size="11" font-weight="600" fill="#4056A8">4.2</text>
+<text x="783.0" y="906.0" font-size="11" font-weight="400" fill="#26251F">How: search, decomposition, replanning</text>
+<text x="1188.0" y="906.0" font-size="9.5" font-weight="400" fill="#5A6791">A  Tree of Thoughts (NeurIPS 2023), A  Self-Discover (ICML 2024), D  Least-to-Most Prompting (ICLR 2023), D  Plan-and-Solve (ACL 2023), D  Graph of Thoughts (AAAI 2024), D  Maieutic Prompting (EMNLP 2022), etc.</text>
+<text x="758.0" y="947.0" font-size="11" font-weight="600" fill="#4056A8">4.3</text>
+<text x="783.0" y="947.0" font-size="11" font-weight="400" fill="#26251F">How: retrieval, tools and escalation</text>
+<text x="1188.0" y="947.0" font-size="9.5" font-weight="400" fill="#5A6791">A  ReAct (ICLR 2023), D  Self-RAG (ICLR 2024), D  AutoMix (NeurIPS 2024), D  HuggingGPT (NeurIPS 2023), D  PAL (ICML 2023), D  Program of Thoughts (TMLR 2023), D  Chain of Code (ICML 2024), etc.</text>
+<text x="758.0" y="988.0" font-size="11" font-weight="600" fill="#4056A8">4.4</text>
+<text x="783.0" y="988.0" font-size="11" font-weight="400" fill="#26251F">How: verification and self-correction</text>
+<text x="1188.0" y="988.0" font-size="9.5" font-weight="400" fill="#5A6791">A  Self-Refine (NeurIPS 2023), D  CRITIC (ICLR 2024), A  SCoRe (ICLR 2025), D  Reflexion (NeurIPS 2023), D  Self-Debug (ICLR 2024), D  Recursive Introspection (NeurIPS 2024), D  Multiagent Debate (ICML 2024), etc.</text>
+<text x="758.0" y="1029.0" font-size="11" font-weight="600" fill="#4056A8">4.5</text>
+<text x="783.0" y="1029.0" font-size="11" font-weight="400" fill="#26251F">How much: adaptive reasoning budget</text>
+<text x="1188.0" y="1029.0" font-size="9.5" font-weight="400" fill="#5A6791">D  MUR (ACL 2026), B  s1 (arXiv 2025), A  Test-Time Compute vs. Parameters (ICLR 2025), D  Large Language Monkeys (arXiv 2024), D  Token-Budget-Aware Reasoning (arXiv 2024), etc.</text>
+<text x="758.0" y="1070.0" font-size="11" font-weight="600" fill="#4056A8">4.6</text>
+<text x="783.0" y="1070.0" font-size="11" font-weight="400" fill="#26251F">Unified cost-aware and light controllers</text>
+<text x="1188.0" y="1070.0" font-size="9.5" font-weight="400" fill="#5A6791">D  AutoMix (NeurIPS 2024), A  RouteLLM (ICLR 2025), A  LLM2Jev (arXiv 2026), D  Hybrid LLM (ICLR 2024), D  Uncertainty of Thoughts (NeurIPS 2024), D  GLoRe (ICML 2024), D  Math-Shepherd (ACL 2024), etc.</text>
+<text x="422.0" y="1253.0" font-size="12.5" font-weight="600" fill="#6F5314">5 · Evaluation of Utility</text>
+<text x="758.0" y="1141.0" font-size="11" font-weight="600" fill="#B78A3C">5.1</text>
+<text x="783.0" y="1141.0" font-size="11" font-weight="400" fill="#26251F">Monitoring accuracy and calibration</text>
+<text x="1188.0" y="1141.0" font-size="9.5" font-weight="400" fill="#8A7240">D  Meta-d′ / Signal Detection (Consciousness and Cognition 2012), D  (Mostly) Know What They Know (arXiv 2022), D  Just Ask for Calibration (EMNLP 2023), D  Semantic Uncertainty (ICLR 2023), etc.</text>
+<text x="758.0" y="1182.0" font-size="11" font-weight="600" fill="#B78A3C">5.2</text>
+<text x="783.0" y="1182.0" font-size="11" font-weight="400" fill="#26251F">Decision utility: quality–cost trade-off</text>
+<text x="1188.0" y="1182.0" font-size="9.5" font-weight="400" fill="#8A7240">D  AutoMix (NeurIPS 2024), A  RouteLLM (ICLR 2025), D  Intrinsic Meta-Cognition (EMNLP 2025), D  Test-Time Compute vs. Parameters (ICLR 2025), A  AbstentionBench (arXiv 2025), etc.</text>
+<text x="758.0" y="1223.0" font-size="11" font-weight="600" fill="#B78A3C">5.3</text>
+<text x="783.0" y="1223.0" font-size="11" font-weight="400" fill="#26251F">Expected vs. realized intervention utility</text>
+<text x="1188.0" y="1223.0" font-size="9.5" font-weight="400" fill="#8A7240">S  Survey protocol (this survey (proposal)), A  AutoMix (NeurIPS 2024), A  MUR (ACL 2026), D  Evaluators Favor Own Output (NeurIPS 2024), D  Just Ask for Calibration (EMNLP 2023), etc.</text>
+<text x="758.0" y="1264.0" font-size="11" font-weight="600" fill="#B78A3C">5.4</text>
+<text x="783.0" y="1264.0" font-size="11" font-weight="400" fill="#26251F">Counterfactual controls and attribution</text>
+<text x="1188.0" y="1264.0" font-size="9.5" font-weight="400" fill="#8A7240">S  Survey protocol (this survey (proposal)), B  Self-Refine (NeurIPS 2023), B  Cannot Self-Correct Yet (ICLR 2024), D  Intrinsic Meta-Cognition (EMNLP 2025), A  AbstentionBench (arXiv 2025), etc.</text>
+<text x="758.0" y="1305.0" font-size="11" font-weight="600" fill="#B78A3C">5.5</text>
+<text x="783.0" y="1305.0" font-size="11" font-weight="400" fill="#26251F">Compute-matched comparisons and regret</text>
+<text x="1188.0" y="1305.0" font-size="9.5" font-weight="400" fill="#8A7240">A  Test-Time Compute vs. Parameters (ICLR 2025), D  MUR (ACL 2026), D  Large Language Monkeys (arXiv 2024), D  Inference Scaling Laws (arXiv 2024), B  Reasoning in Token Economies (EMNLP 2024), etc.</text>
+<text x="758.0" y="1346.0" font-size="11" font-weight="600" fill="#B78A3C">5.6</text>
+<text x="783.0" y="1346.0" font-size="11" font-weight="400" fill="#26251F">Cross-level gains: regulation vs. learning</text>
+<text x="1188.0" y="1346.0" font-size="9.5" font-weight="400" fill="#8A7240">S  Survey accounting (this survey (proposal)), A  MC² Consolidation (ACL 2026), D  Decoupling Metacognition (AAAI 2025), D  Large Language Monkeys (arXiv 2024), etc.</text>
+<text x="422.0" y="1508.5" font-size="12.5" font-weight="600" fill="#3A2E82">6 · Meta-Regulation</text>
+<text x="758.0" y="1417.0" font-size="11" font-weight="600" fill="#6A5AC4">6.1</text>
+<text x="783.0" y="1417.0" font-size="11" font-weight="400" fill="#26251F">Learning a monitor / evaluator</text>
+<text x="1188.0" y="1417.0" font-size="9.5" font-weight="400" fill="#6A5CAC">A  Self-Rewarding LMs (ICML 2024), D  Meta-Rewarding LMs (EMNLP 2025), D  Self-Taught Evaluators (arXiv 2024), D  ThinkPRM (arXiv 2025), D  Weak-to-Strong Monitoring (arXiv 2025), etc.</text>
+<text x="758.0" y="1458.0" font-size="11" font-weight="600" fill="#6A5AC4">6.2</text>
+<text x="783.0" y="1458.0" font-size="11" font-weight="400" fill="#26251F">Learning control and correction policies</text>
+<text x="1188.0" y="1458.0" font-size="9.5" font-weight="400" fill="#6A5CAC">A  SCoRe (ICLR 2025), D  MC² Consolidation (ACL 2026), D  Reflexion (NeurIPS 2023), D  Self-Refine (NeurIPS 2023), D  Language Agent Tree Search (ICML 2024), D  Voyager (TMLR 2024), D  OPRO (ICLR 2024), etc.</text>
+<text x="758.0" y="1499.0" font-size="11" font-weight="600" fill="#6A5AC4">6.3</text>
+<text x="783.0" y="1499.0" font-size="11" font-weight="400" fill="#26251F">Feedback-driven meta-policy updates</text>
+<text x="1188.0" y="1499.0" font-size="9.5" font-weight="400" fill="#6A5CAC">D  MC² Consolidation (ACL 2026), A  SCoRe (ICLR 2025), D  Reflexion (NeurIPS 2023), D  Meta-Rewarding LMs (EMNLP 2025), D  Constitutional AI (arXiv 2022), D  Fine-Grained Human (NeurIPS 2023), etc.</text>
+<text x="758.0" y="1540.0" font-size="11" font-weight="600" fill="#6A5AC4">6.4</text>
+<text x="783.0" y="1540.0" font-size="11" font-weight="400" fill="#26251F">From episodes to reusable meta-knowledge</text>
+<text x="1188.0" y="1540.0" font-size="9.5" font-weight="400" fill="#6A5CAC">D  MC² Consolidation (ACL 2026), A  ReasoningBank (ICLR 2026), D  Meta Agent Search (ICLR 2025), D  Voyager (TMLR 2024), D  Agent Workflow Memory (arXiv 2024), D  ExpeL (AAAI 2024), etc.</text>
+<text x="758.0" y="1581.0" font-size="11" font-weight="600" fill="#6A5AC4">6.5</text>
+<text x="783.0" y="1581.0" font-size="11" font-weight="400" fill="#26251F">Cross-task transfer and adaptation</text>
+<text x="1188.0" y="1581.0" font-size="9.5" font-weight="400" fill="#6A5CAC">A  ReasoningBank (ICLR 2026), A  ExpeL (AAAI 2024), D  Buffer of Thoughts (NeurIPS 2024), D  Reflexion (NeurIPS 2023), D  Agent Workflow Memory (arXiv 2024), D  Voyager (TMLR 2024), D  STaR (NeurIPS 2022), etc.</text>
+<text x="422.0" y="1743.5" font-size="12.5" font-weight="600" fill="#5E2050">7 · Toward RSI</text>
+<text x="758.0" y="1652.0" font-size="11" font-weight="600" fill="#94407E">7.1</text>
+<text x="783.0" y="1652.0" font-size="11" font-weight="400" fill="#26251F">Propose and select self-modifications</text>
+<text x="1188.0" y="1652.0" font-size="9.5" font-weight="400" fill="#8E5A80">A  Meta Agent Search (ICLR 2025), D  Darwin Gödel Machine (ICLR 2026), D  Huxley-Gödel Machine (ICLR 2026), D  SICA (arXiv 2025), D  Live-SWE-agent (arXiv 2025), D  STOP (COLM 2024), etc.</text>
+<text x="758.0" y="1693.0" font-size="11" font-weight="600" fill="#94407E">7.2</text>
+<text x="783.0" y="1693.0" font-size="11" font-weight="400" fill="#26251F">Validate candidates and gate updates</text>
+<text x="1188.0" y="1693.0" font-size="9.5" font-weight="400" fill="#8E5A80">D  Darwin Gödel Machine (ICLR 2026), D  Huxley-Gödel Machine (ICLR 2026), D  AI Control (ICML 2024), D  Weak-to-Strong (arXiv 2023), D  Constitutional AI (arXiv 2022), etc.</text>
+<text x="758.0" y="1734.0" font-size="11" font-weight="600" fill="#94407E">7.3</text>
+<text x="783.0" y="1734.0" font-size="11" font-weight="400" fill="#26251F">Improve the improvement mechanism</text>
+<text x="1188.0" y="1734.0" font-size="9.5" font-weight="400" fill="#8E5A80">B  STOP (COLM 2024), D  Huxley-Gödel Machine (ICLR 2026), D  Meta-Rewarding LMs (EMNLP 2025), D  AgentSquare (ICML 2025), D  Darwin Gödel Machine (ICLR 2026), D  OPRO (ICLR 2024), D  DSPy (ICLR 2024), etc.</text>
+<text x="758.0" y="1775.0" font-size="11" font-weight="600" fill="#94407E">7.4</text>
+<text x="783.0" y="1775.0" font-size="11" font-weight="400" fill="#26251F">Future improvement potential / metaproductivity</text>
+<text x="1188.0" y="1775.0" font-size="9.5" font-weight="400" fill="#8E5A80">D  Huxley-Gödel Machine (ICLR 2026), A  Darwin Gödel Machine (ICLR 2026), D  Self-Rewarding LMs (ICML 2024), D  Meta-Rewarding LMs (EMNLP 2025), D  Statistical Limits (arXiv 2025), etc.</text>
+<text x="758.0" y="1816.0" font-size="11" font-weight="600" fill="#94407E">7.5</text>
+<text x="783.0" y="1816.0" font-size="11" font-weight="400" fill="#26251F">Boundary: self-improvement is not full RSI</text>
+<text x="1188.0" y="1816.0" font-size="9.5" font-weight="400" fill="#8E5A80">B  STOP (COLM 2024), A  MC² Consolidation (ACL 2026), D  Darwin Gödel Machine (ICLR 2026), D  Huxley-Gödel Machine (ICLR 2026), D  Gödel Machines (arXiv 2003), D  Statistical Limits (arXiv 2025), etc.</text>
+<text x="422.0" y="1978.5" font-size="12.5" font-weight="600" fill="#752724">8 · Open Challenges</text>
+<text x="758.0" y="1887.0" font-size="11" font-weight="600" fill="#B2524D">8.1</text>
+<text x="783.0" y="1887.0" font-size="11" font-weight="400" fill="#26251F">Operational definition and self-access</text>
+<text x="1188.0" y="1887.0" font-size="9.5" font-weight="400" fill="#985A56">D  Monitoring of Internal Activations (NeurIPS 2025), B  Self-Refine (NeurIPS 2023), D  Looking Inward (ICLR 2025), D  Intrinsic Meta-Cognition (EMNLP 2025), etc.</text>
+<text x="758.0" y="1928.0" font-size="11" font-weight="600" fill="#B2524D">8.2</text>
+<text x="783.0" y="1928.0" font-size="11" font-weight="400" fill="#26251F">Causal value of monitoring signals</text>
+<text x="1188.0" y="1928.0" font-size="9.5" font-weight="400" fill="#985A56">S  Intervention-based (this survey (proposal)), D  AutoMix (NeurIPS 2024), D  Monitoring of Internal Activations (NeurIPS 2025), D  Evaluators Favor Own Output (NeurIPS 2024), etc.</text>
+<text x="758.0" y="1969.0" font-size="11" font-weight="600" fill="#B2524D">8.3</text>
+<text x="783.0" y="1969.0" font-size="11" font-weight="400" fill="#26251F">OOD calibration and controller transfer</text>
+<text x="1188.0" y="1969.0" font-size="9.5" font-weight="400" fill="#985A56">D  (Mostly) Know What They Know (arXiv 2022), A  RouteLLM (ICLR 2025), D  Intrinsic Meta-Cognition (EMNLP 2025), B  Capability Awareness (ICLR 2026), B  Self-Recognition (EMNLP Findings 2024), etc.</text>
+<text x="758.0" y="2010.0" font-size="11" font-weight="600" fill="#B2524D">8.4</text>
+<text x="783.0" y="2010.0" font-size="11" font-weight="400" fill="#26251F">Metacognitive credit and feedback reliability</text>
+<text x="1188.0" y="2010.0" font-size="9.5" font-weight="400" fill="#985A56">D  MC² Consolidation (ACL 2026), A  SCoRe (ICLR 2025), D  Intrinsic Meta-Cognition (EMNLP 2025), D  Monitoring of Internal Activations (NeurIPS 2025), D  Decoupling Metacognition (AAAI 2025), etc.</text>
+<text x="758.0" y="2051.0" font-size="11" font-weight="600" fill="#B2524D">8.5</text>
+<text x="783.0" y="2051.0" font-size="11" font-weight="400" fill="#26251F">Long-horizon stability and oversight</text>
+<text x="1188.0" y="2051.0" font-size="9.5" font-weight="400" fill="#985A56">A  Darwin Gödel Machine (ICLR 2026), B  STOP (COLM 2024), D  Statistical Limits (arXiv 2025), B  Evidence for Limited Metacognition (ICLR 2026), B  Model Collapse (Nature 2024), etc.</text>
+<text x="44.0" y="58.0" font-size="25" font-weight="600" fill="#232219">Metacognition in Large Language Models &amp; Autonomous Agents</text>
+<text x="44.0" y="90.0" font-size="13.5" font-weight="400" fill="#6E6A60">An L0–L2 taxonomy of representing, regulating, and learning cognition</text>
+<text x="2336.0" y="48.0" font-size="10" font-weight="700" fill="#9B978C" text-anchor="end">SURVEY TAXONOMY · V2</text>
+<text x="2336.0" y="66.0" font-size="9.5" font-weight="400" fill="#9B978C" text-anchor="end">Reclassified mechanisms &amp; citations</text>
+<text x="84.0" y="328.0" font-size="9.5" font-weight="600" fill="#9B978C">LEVEL / ROLE</text>
+<text x="404.0" y="328.0" font-size="9.5" font-weight="600" fill="#9B978C">CHAPTER</text>
+<text x="758.0" y="328.0" font-size="9.5" font-weight="600" fill="#9B978C">SUB-QUESTION / MECHANISM</text>
+<text x="2336.0" y="328.0" font-size="9.5" font-weight="600" fill="#9B978C" text-anchor="end">SELECTED WORKS  (D: primary   A: adjacent/enabling   B: boundary   S: survey synthesis)</text>
+</svg>

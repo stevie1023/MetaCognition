@@ -1,0 +1,414 @@
+# Bibliography: ch6 — see notes/taxonomy.yaml for the structure.
+# Two facets per entry:
+#   role  — what job the citation does in the argument
+#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   deck_rank — position in the corrected deck's citation string
+#               (-1 marks this survey's own proposal; 999 = unnamed)
+
+- section: "6.1"
+  papers:
+    - title: 'Self-Rewarding Language Models'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2401.10020'}
+      role: representative
+      tier: A
+      deck_rank: 0
+      why: 'Reframes the monitor as something the model trains itself — the same weights are both policy and judge — so ''can the monitor be learned'' is answered by construction and becomes the baseline every later monitor-improvement paper reacts to.'
+    - title: 'Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge'
+      venue: 'EMNLP 2025'
+      links: {'paper': 'https://arxiv.org/abs/2407.19594'}
+      role: representative
+      tier: D
+      deck_rank: 1
+      why: 'Diagnoses the exact failure this subsection is about — in self-rewarding the judge never improves, so the loop saturates or reward-hacks — and fixes it with a meta-judge, making train-the-monitor an explicit, separable objective.'
+    - title: 'Self-Taught Evaluators'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2408.02666'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows an evaluator can be bootstrapped from synthetic preference data alone, the strongest evidence that monitoring ability is a trainable capability rather than a fixed property of the base model.'
+    - title: 'Process-Based Self-Rewarding Language Models'
+      venue: 'ACL Findings 2025'
+      links: {'paper': 'https://arxiv.org/abs/2503.03746'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'Documents that the original self-rewarding loop degrades performance on reasoning and that the fix is step-level judging — evidence that monitor quality is domain-specific and coarse monitors are an active failure mode.'
+    - title: 'Process Reward Models That Think (ThinkPRM)'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2504.16828'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Turns the monitor into a generative verifier trained on orders of magnitude fewer process labels, showing the monitor''s own reasoning can substitute for supervision.'
+    - title: 'Let''s Verify Step by Step'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.20050', 'data': 'https://github.com/openai/prm800k'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Establishes process supervision as the utility-bearing signal for step-level control and releases the annotated corpus that makes learned verifiers evaluable.'
+    - title: 'Language Models (Mostly) Know What They Know'
+      venue: 'arXiv 2022'
+      links: {'paper': 'https://arxiv.org/abs/2207.05221'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.'
+    - title: 'Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2405.12205'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Provides the measurement apparatus — can a model label the skill a problem requires, and does that labelling improve solutions — grounding claims about monitor competence in a concrete, reusable probe.'
+    - title: 'Large Language Models Cannot Self-Correct Reasoning Yet'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.01798'}
+      role: contrast
+      tier: B
+      deck_rank: 999
+      why: 'The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.'
+    - title: 'Reliable Weak-to-Strong Monitoring of LLM Agents'
+      venue: 'arXiv 2025'
+      links: {'paper': 'https://arxiv.org/abs/2508.19461'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Stress-tests the monitoring system itself and shows agent awareness of being watched degrades monitor reliability while scaffolding enables weak monitors to catch strong agents — the adversarial face of a better monitor.'
+    - title: 'Metacognition and Uncertainty Communication in Humans and Large Language Models'
+      venue: 'Current Directions in Psychological Science 2025'
+      links: {'paper': 'https://arxiv.org/abs/2504.14045'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Frames monitoring as confidence and uncertainty estimation and surveys why results on LLM metacognitive insight conflict, supplying conceptual vocabulary and a caution against over-claiming.'
+
+- section: "6.2"
+  papers:
+    - title: 'Training Language Models to Self-Correct via Reinforcement Learning (SCoRe)'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12917'}
+      role: representative
+      tier: A
+      deck_rank: 0
+      why: 'Attacks the negative result on its own terms by training the self-correction policy with reinforcement learning, showing the failure is a training-distribution artefact rather than an architectural limit.'
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: D
+      deck_rank: 1
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'Reflexion: Language Agents with Verbal Reinforcement Learning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.11366'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes correction episodic and cross-trial via a verbal memory buffer, distinguishing retry-with-reflection from single-pass refinement and explaining why it only helps when an environment signal supplies the error.'
+    - title: 'Self-Refine: Iterative Refinement with Self-Feedback'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17651', 'code': 'https://github.com/madaan/self-refine'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The canonical claim that a model can improve its own output without external feedback, and therefore the primary target of the contrast cited next.'
+    - title: 'Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.04406', 'code': 'https://github.com/lapisrocks/LanguageAgentTreeSearch'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'A single search controller that selects among reasoning, acting, and reflection strategies over one tree, making strategy selection an explicit action in the search space.'
+    - title: 'ReAct: Synergizing Reasoning and Acting in Language Models'
+      venue: 'ICLR 2023'
+      links: {'paper': 'https://arxiv.org/abs/2210.03629', 'code': 'https://github.com/ysymyth/ReAct'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Defines the interleaved thought-act loop in which the model itself emits the token that triggers an external call, establishing when to reach outside itself as a modelling decision rather than a fixed pipeline stage.'
+    - title: 'Toolformer: Language Models Can Teach Themselves to Use Tools'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2302.04761'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Makes API-call tokens a learned part of the output distribution, so the tool-invocation decision is trained on whether the call actually reduced loss — a self-supervised value-of-tool criterion.'
+    - title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+      venue: 'TMLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.16291'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Its automatic curriculum plus skill library is a controller that compounds, the canonical example that control can be improved over a lifetime of episodes.'
+    - title: 'Large Language Models as Optimizers (OPRO)'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2309.03409'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes the controller literally an optimizer that reads a history of solution-score pairs and proposes the next attempt, the general template for updating the policy from past outcomes without gradients.'
+    - title: 'DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.03714'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Reframes the hand-written controller as a compilation target; a compiler searches the control program against a metric, the systematic version of the control policy should be learned.'
+    - title: 'TextGrad: Automatic Differentiation via Text'
+      venue: 'Nature 2025'
+      links: {'paper': 'https://arxiv.org/abs/2406.07496'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Provides a general mechanism for updating any text variable in a pipeline via textual gradients, supplying the optimization substrate later self-improving systems use to rewrite their own control logic.'
+    - title: 'Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
+
+- section: "6.3"
+  papers:
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: D
+      deck_rank: 0
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'Training Language Models to Self-Correct via Reinforcement Learning (SCoRe)'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2409.12917'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Attacks the negative result on its own terms by training the self-correction policy with reinforcement learning, showing the failure is a training-distribution artefact rather than an architectural limit.'
+    - title: 'Reflexion: Language Agents with Verbal Reinforcement Learning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.11366'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes correction episodic and cross-trial via a verbal memory buffer, distinguishing retry-with-reflection from single-pass refinement and explaining why it only helps when an environment signal supplies the error.'
+    - title: 'Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge'
+      venue: 'EMNLP 2025'
+      links: {'paper': 'https://arxiv.org/abs/2407.19594'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Diagnoses the exact failure this subsection is about — in self-rewarding the judge never improves, so the loop saturates or reward-hacks — and fixes it with a meta-judge, making train-the-monitor an explicit, separable objective.'
+    - title: 'Constitutional AI: Harmlessness from AI Feedback'
+      venue: 'arXiv 2022'
+      links: {'paper': 'https://arxiv.org/abs/2212.08073'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The template for feedback-driven self-update at scale: self-critique, revision, then reinforcement learning from AI feedback, showing how one round''s feedback becomes the training signal that changes the next round''s policy.'
+    - title: 'Fine-Grained Human Feedback Gives Better Rewards for Language Model Training'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2306.01693'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Demonstrates that the granularity of feedback determines what the update can learn — step and sentence-level rewards change policy more precisely than a holistic scalar.'
+    - title: 'Self-Refine: Iterative Refinement with Self-Feedback'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.17651', 'code': 'https://github.com/madaan/self-refine'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The canonical claim that a model can improve its own output without external feedback, and therefore the primary target of the contrast cited next.'
+    - title: 'Self-Taught Evaluators'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2408.02666'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Shows an evaluator can be bootstrapped from synthetic preference data alone, the strongest evidence that monitoring ability is a trainable capability rather than a fixed property of the base model.'
+    - title: 'DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2310.03714'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Reframes the hand-written controller as a compilation target; a compiler searches the control program against a metric, the systematic version of the control policy should be learned.'
+    - title: 'TextGrad: Automatic Differentiation via Text'
+      venue: 'Nature 2025'
+      links: {'paper': 'https://arxiv.org/abs/2406.07496'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Provides a general mechanism for updating any text variable in a pipeline via textual gradients, supplying the optimization substrate later self-improving systems use to rewrite their own control logic.'
+    - title: 'Large Language Models as Optimizers (OPRO)'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2309.03409'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes the controller literally an optimizer that reads a history of solution-score pairs and proposes the next attempt, the general template for updating the policy from past outcomes without gradients.'
+    - title: 'Self-Rewarding Language Models'
+      venue: 'ICML 2024'
+      links: {'paper': 'https://arxiv.org/abs/2401.10020'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Reframes the monitor as something the model trains itself — the same weights are both policy and judge — so ''can the monitor be learned'' is answered by construction and becomes the baseline every later monitor-improvement paper reacts to.'
+
+- section: "6.4"
+  papers:
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: D
+      deck_rank: 0
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory'
+      venue: 'ICLR 2026'
+      links: {'paper': 'https://arxiv.org/abs/2509.25140'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Distills generalizable reasoning strategies and shows they transfer across web and software-engineering domains, giving modern evidence that consolidated meta-knowledge is not task-bound.'
+    - title: 'Automated Design of Agentic Systems (Meta Agent Search)'
+      venue: 'ICLR 2025'
+      links: {'paper': 'https://arxiv.org/abs/2408.08435'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The strongest transfer evidence in the chapter — agents invented in code by a meta agent keep outperforming hand-designed agents even when transferred across domains and models.'
+    - title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+      venue: 'TMLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.16291'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Its automatic curriculum plus skill library is a controller that compounds, the canonical example that control can be improved over a lifetime of episodes.'
+    - title: 'Agent Workflow Memory'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2409.07429'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Induces reusable workflows and measures generalization under widening train-test gaps, with gains increasing as the gap grows — transfer as a designed property, not an accident.'
+    - title: 'ExpeL: LLM Agents Are Experiential Learners'
+      venue: 'AAAI 2024'
+      links: {'paper': 'https://arxiv.org/abs/2308.10144'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Extracts natural-language insights from a training-task suite and carries them to new tasks, one of the earliest agent-level transfer claims.'
+    - title: 'Buffer of Thoughts: Thought-Augmented Reasoning'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.04271'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The meta-buffer''s whole value proposition is that a template distilled from one task family is retrievable and instantiable on another.'
+    - title: 'Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2405.12205'}
+      role: benchmark
+      tier: A
+      deck_rank: 999
+      why: 'Provides the measurement apparatus — can a model label the skill a problem requires, and does that labelling improve solutions — grounding claims about monitor competence in a concrete, reusable probe.'
+    - title: 'Reflexion: Language Agents with Verbal Reinforcement Learning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.11366'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes correction episodic and cross-trial via a verbal memory buffer, distinguishing retry-with-reflection from single-pass refinement and explaining why it only helps when an environment signal supplies the error.'
+    - title: 'Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
+    - title: 'Robust Agents Learn Causal World Models'
+      venue: 'ICLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2402.10877'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Proves that generalizing under distributional shift requires having learned an approximate causal world model — the theoretical boundary on what cross-task transfer can and cannot be.'
+
+- section: "6.5"
+  papers:
+    - title: 'ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory'
+      venue: 'ICLR 2026'
+      links: {'paper': 'https://arxiv.org/abs/2509.25140'}
+      role: representative
+      tier: A
+      deck_rank: 0
+      why: 'Distills generalizable reasoning strategies and shows they transfer across web and software-engineering domains, giving modern evidence that consolidated meta-knowledge is not task-bound.'
+    - title: 'ExpeL: LLM Agents Are Experiential Learners'
+      venue: 'AAAI 2024'
+      links: {'paper': 'https://arxiv.org/abs/2308.10144'}
+      role: representative
+      tier: A
+      deck_rank: 1
+      why: 'Extracts natural-language insights from a training-task suite and carries them to new tasks, one of the earliest agent-level transfer claims.'
+    - title: 'Beyond Meta-Reasoning: Metacognitive Consolidation for Self-Improving LLM Reasoning (MC-squared)'
+      venue: 'ACL 2026'
+      links: {'paper': 'https://aclanthology.org/2026.acl-long.1095/'}
+      role: boundary
+      tier: B
+      deck_rank: 999
+      why: 'Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.'
+    - title: 'Buffer of Thoughts: Thought-Augmented Reasoning'
+      venue: 'NeurIPS 2024'
+      links: {'paper': 'https://arxiv.org/abs/2406.04271'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The meta-buffer''s whole value proposition is that a template distilled from one task family is retrievable and instantiable on another.'
+    - title: 'Reflexion: Language Agents with Verbal Reinforcement Learning'
+      venue: 'NeurIPS 2023'
+      links: {'paper': 'https://arxiv.org/abs/2303.11366'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Makes correction episodic and cross-trial via a verbal memory buffer, distinguishing retry-with-reflection from single-pass refinement and explaining why it only helps when an environment signal supplies the error.'
+    - title: 'Generative Agents: Interactive Simulacra of Human Behavior'
+      venue: 'UIST 2023'
+      links: {'paper': 'https://arxiv.org/abs/2304.03442'}
+      role: foundational
+      tier: D
+      deck_rank: 999
+      why: 'Introduces the abstraction of synthesizing memories over time into higher-level reflections, the original distill-then-retrieve architecture that later consolidation work formalizes.'
+    - title: 'Agent Workflow Memory'
+      venue: 'arXiv 2024'
+      links: {'paper': 'https://arxiv.org/abs/2409.07429'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Induces reusable workflows and measures generalization under widening train-test gaps, with gains increasing as the gap grows — transfer as a designed property, not an accident.'
+    - title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+      venue: 'TMLR 2024'
+      links: {'paper': 'https://arxiv.org/abs/2305.16291'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'Its automatic curriculum plus skill library is a controller that compounds, the canonical example that control can be improved over a lifetime of episodes.'
+    - title: 'STaR: Bootstrapping Reasoning with Reasoning'
+      venue: 'NeurIPS 2022'
+      links: {'paper': 'https://arxiv.org/abs/2203.14465'}
+      role: representative
+      tier: D
+      deck_rank: 999
+      why: 'The weight-level counterpart: successful episodes are baked into parameters rather than memory, the alternative consolidation path the chapter must weigh against explicit memory.'
+    - title: 'Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning'
+      venue: 'ICML 2025'
+      links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
+      role: positioning
+      tier: S
+      deck_rank: 999
+      why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
+
