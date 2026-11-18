@@ -1,7 +1,7 @@
 # Bibliography: ch5 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -60,7 +60,7 @@
       venue: 'NAACL 2024'
       links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
     - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
@@ -74,7 +74,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
 
@@ -133,7 +133,7 @@
       venue: 'NAACL 2024'
       links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
 
@@ -178,7 +178,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
     - title: 'Language Models (Mostly) Know What They Know'
@@ -213,7 +213,7 @@
       venue: 'NAACL 2024'
       links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
 
@@ -265,7 +265,7 @@
       venue: 'TACL 2024'
       links: {'paper': 'https://arxiv.org/abs/2406.01297'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
     - title: 'LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations'
@@ -331,7 +331,7 @@
       venue: 'TMLR 2025'
       links: {'paper': 'https://arxiv.org/abs/2503.16419'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
     - title: 'Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies'
@@ -383,7 +383,7 @@
       venue: 'TMLR 2025'
       links: {'paper': 'https://arxiv.org/abs/2503.16419'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
     - title: 'Large Language Monkeys: Scaling Inference Compute with Repeated Sampling'
@@ -411,14 +411,14 @@
       venue: 'TACL 2024'
       links: {'paper': 'https://arxiv.org/abs/2406.01297'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
     - title: 'A Survey of Confidence Estimation and Calibration in Large Language Models'
       venue: 'NAACL 2024'
       links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
 

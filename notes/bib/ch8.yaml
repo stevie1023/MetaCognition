@@ -1,7 +1,7 @@
 # Bibliography: ch8 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -25,7 +25,7 @@
       venue: 'arXiv 2026'
       links: {'paper': 'https://arxiv.org/abs/2607.11881'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.'
     - title: 'Evidence for Limited Metacognition in Large Language Models'
@@ -39,7 +39,7 @@
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2504.20084'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Surveys the definitional sprawl of awareness and self-knowledge in LLMs, used to argue the boundary is currently definitional rather than empirical.'
     - title: 'Self-Recognition in Language Models'
@@ -67,7 +67,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
     - title: 'LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens'
@@ -192,7 +192,7 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
     - title: 'LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens'
@@ -206,7 +206,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
 
@@ -272,7 +272,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
     - title: 'Self-Recognition in Language Models'
@@ -310,7 +310,7 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
     - title: 'AI Models Collapse When Trained on Recursively Generated Data'
@@ -324,7 +324,7 @@
       venue: 'arXiv 2026'
       links: {'paper': 'https://arxiv.org/abs/2607.07663'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Surveys recursive self-improvement mechanisms and failure modes, the organizing reference for what stability must mean.'
     - title: 'Calibrated Language Models Must Hallucinate'
@@ -338,7 +338,7 @@
       venue: 'TMLR 2025'
       links: {'paper': 'https://arxiv.org/abs/2503.16419'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
     - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'

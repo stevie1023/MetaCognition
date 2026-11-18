@@ -1,7 +1,7 @@
 # Bibliography: ch1 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -39,7 +39,7 @@
       venue: 'Annual Review of Psychology 2024'
       links: {'paper': 'https://doi.org/10.1146/annurev-psych-022423-032425'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Current synthesis of human metacognition and confidence; the up-to-date psychological reference frame for term definitions.'
     - title: 'Logic, Self-Awareness and Self-Improvement: The Metacognitive Loop and the Problem of Brittleness'
@@ -53,7 +53,7 @@
       venue: 'Artificial Intelligence 2005'
       links: {'paper': 'https://doi.org/10.1016/j.artint.2005.10.009'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The reference survey of monitoring-control in computational systems, establishing the lineage from metareasoning to modern agents.'
 
@@ -84,14 +84,14 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/yan25g.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Translates value-of-computation and bounded-rationality ideas into an explicit Bayesian meta-reasoning agenda for LLMs — the bridge from this section''s theory to LLM practice.'
     - title: 'Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning'
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
 

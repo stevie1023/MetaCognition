@@ -6,12 +6,13 @@ A curated reading list for a level-structured survey of metacognition in large l
 
 **390 citations** of **196 distinct works** across **37 sub-questions**, grouped into **8 chapters** and **8 level bands**.
 
-| Tier | Distinct works | Meaning |
+| Tier | Citations | Meaning |
 |---|---|---|
-| `D` | 122 | **Primary metacognitive study.** Directly studies the stated metacognitive concept or mechanism. Only D-tier evidence may ground a positive claim about metacognition itself. |
-| `A` | 19 | **Adjacent / enabling.** Supplies capability the metacognitive mechanism can be built on or measured with, without itself studying metacognition. |
-| `B` | 27 | **Boundary.** Tests where the mechanism stops working — negative results, limitations, counterexamples. |
-| `S` | 28 | **Survey synthesis.** This survey's own analytical proposal, protocol, or accounting. Not a result claimed by any cited paper. |
+| `D` | 229 | **Primary metacognitive study.** Directly studies the stated metacognitive concept or mechanism. Only D-tier evidence may ground a positive claim about metacognition itself. |
+| `A` | 42 | **Adjacent / enabling.** Supplies capability the metacognitive mechanism can be built on or measured with, without itself studying metacognition. |
+| `B` | 66 | **Boundary.** Tests where the mechanism stops working — negative results, limitations, counterexamples. |
+| `V` | 48 | **Other authors' survey, review, or position paper.** Maps a field rather than reporting a new result; cited for framing, not as evidence about metacognition. |
+| `S` | 5 | **This survey's own proposal.** An analytical proposal, protocol, or accounting introduced here. Not a result claimed by any cited paper. |
 
 ## Overview
 
@@ -25,7 +26,7 @@ Editable sources: `figures/figure1_taxonomy.svg` (vector) and `figures/figure1_t
 
 ## How to read the two facets
 
-Every entry carries exactly one **role** and exactly one **tier**. The role says what job the citation does; the tier says how much weight it can bear. Roles:
+Every entry carries exactly one **role** and exactly one **tier**. Both are properties of the *citation*, not of the work: a paper that is primary metacognitive evidence in one sub-question can be adjacent or boundary evidence in another, and it is recorded as such at each place it appears. The role says what job the citation does; the tier says how much weight it can bear *here*. Roles:
 
 | Role | Meaning |
 |---|---|
@@ -43,9 +44,10 @@ Tiers:
 | `D` | **Primary metacognitive study.** Directly studies the stated metacognitive concept or mechanism. Only D-tier evidence may ground a positive claim about metacognition itself. |
 | `A` | **Adjacent / enabling.** Supplies capability the metacognitive mechanism can be built on or measured with, without itself studying metacognition. |
 | `B` | **Boundary.** Tests where the mechanism stops working — negative results, limitations, counterexamples. |
-| `S` | **Survey synthesis.** This survey's own analytical proposal, protocol, or accounting. Not a result claimed by any cited paper. |
+| `V` | **Other authors' survey, review, or position paper.** Maps a field rather than reporting a new result; cited for framing, not as evidence about metacognition. |
+| `S` | **This survey's own proposal.** An analytical proposal, protocol, or accounting introduced here. Not a result claimed by any cited paper. |
 
-> **Classification rule.** `D` directly studies the stated metacognitive concept/mechanism; `A` is adjacent/enabling; `B` tests a boundary; `S` is this survey's analytical proposal (not a result claimed by cited papers).
+> **Classification rule.** `D` directly studies the stated metacognitive concept/mechanism; `A` is adjacent/enabling; `B` tests a boundary; `V` is another author's survey or position paper, cited for framing; `S` is this survey's own analytical proposal (not a result claimed by cited papers).
 
 ## Level framework
 
@@ -166,10 +168,10 @@ Tiers:
   - `D` · `foundational` — The computational branch of monitoring-control: an explicit metacognitive loop (notice-assess-guide) proposed to fix brittleness — the original 'does it transfer to machines' argument.
 
 - **Metacognition and Confidence: A Review and Synthesis** [Annual Review of Psychology 2024] [paper](https://doi.org/10.1146/annurev-psych-022423-032425)
-  - `S` · `positioning` — Current synthesis of human metacognition and confidence; the up-to-date psychological reference frame for term definitions.
+  - `V` · `positioning` — Current synthesis of human metacognition and confidence; the up-to-date psychological reference frame for term definitions.
 
 - **Metacognition in Computation: A Selected Research Review** [Artificial Intelligence 2005] [paper](https://doi.org/10.1016/j.artint.2005.10.009)
-  - `S` · `positioning` — The reference survey of monitoring-control in computational systems, establishing the lineage from metareasoning to modern agents.
+  - `V` · `positioning` — The reference survey of monitoring-control in computational systems, establishing the lineage from metareasoning to modern agents.
 
 ### 1.2 Metareasoning and Value of Computation
 
@@ -187,10 +189,10 @@ Tiers:
   - `D` · `foundational` — Connects value-of-computation and bounded optimality to the neuroscience of effort, supplying the normative target the LLM test-time-compute literature implicitly optimizes.
 
 - **Position: LLMs Need a Bayesian Meta-Reasoning Framework** [ICML 2025] [paper](https://proceedings.mlr.press/v267/yan25g.html)
-  - `S` · `positioning` — Translates value-of-computation and bounded-rationality ideas into an explicit Bayesian meta-reasoning agenda for LLMs — the bridge from this section's theory to LLM practice.
+  - `V` · `positioning` — Translates value-of-computation and bounded-rationality ideas into an explicit Bayesian meta-reasoning agenda for LLMs — the bridge from this section's theory to LLM practice.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ### 1.3 Self-evaluation and metacognitive measurement
 
@@ -237,7 +239,7 @@ Tiers:
   - `D` · `representative` — Explicitly translates Nelson-Narens and Flavell into a Monitor-Generate-Verify architecture, pinpointing where LLM reasoning pipelines silently drop the monitoring half of the loop.
 
 - **Metareasoning: Thinking about Thinking** [MIT Press 2011] [book](https://direct.mit.edu/books/book/2886)
-  - `S` · `positioning` — The edited volume codifying meta-level control and introspective monitoring; the standard citation for the machine-side monitoring-control account.
+  - `V` · `positioning` — The edited volume codifying meta-level control and introspective monitoring; the standard citation for the machine-side monitoring-control account.
 
 ### 2.2 Boundary: monitoring vs. routine reflection
 
@@ -267,19 +269,19 @@ Tiers:
   - `B` · `boundary` — With matched-similarity baselines, shows prompted self-reports lack privileged access — evidence that many metacognitive-looking behaviours may be pattern matching.
 
 - **Metacognitive Myopia in Large Language Models** [arXiv 2024] [paper](https://arxiv.org/abs/2408.05568)
-  - `S` · `positioning` — Argues model biases stem from missing monitoring and control, reframing apparent competence as a metacognitive deficit — a skeptical diagnostic framework.
+  - `V` · `positioning` — Argues model biases stem from missing monitoring and control, reframing apparent competence as a metacognitive deficit — a skeptical diagnostic framework.
 
 - **Does It Make Sense to Speak of Introspection in Large Language Models?** [arXiv 2025] [paper](https://arxiv.org/abs/2506.05068)
-  - `S` · `positioning` — Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.
+  - `V` · `positioning` — Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.
 
 - **Imagining and Building Wise Machines: The Centrality of AI Metacognition** [Trends in Cognitive Sciences 2025] [paper](https://doi.org/10.1016/j.tics.2025.01.002)
-  - `S` · `positioning` — Contrasts object-level heuristics with metacognitive strategies such as humility and perspective-taking, sharpening the object-level versus metacognitive line.
+  - `V` · `positioning` — Contrasts object-level heuristics with metacognitive strategies such as humility and perspective-taking, sharpening the object-level versus metacognitive line.
 
 - **Metacognitive AI: Framework and the Case for a Neurosymbolic Approach** [NeSy 2024] [paper](https://doi.org/10.1007/978-3-031-71170-1_7)
-  - `S` · `positioning` — Offers the TRAP criteria (transparency, reasoning, adaptation, perception) for what counts as metacognitive AI, an alternative definitional test to compare against.
+  - `V` · `positioning` — Offers the TRAP criteria (transparency, reasoning, adaptation, perception) for what counts as metacognitive AI, an alternative definitional test to compare against.
 
 - **Metacognition in LLMs: Foundations, Progress, and Opportunities** [arXiv 2026] [paper](https://arxiv.org/abs/2607.11881)
-  - `S` · `positioning` — The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.
+  - `V` · `positioning` — The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.
 
 ## 3. Metacognitive Monitoring
 
@@ -332,10 +334,10 @@ Tiers:
   - `B` · `contrast` — Finds high calibration error and persistent overconfidence in verbalized confidence, tempering the optimistic 'just ask' framing.
 
 - **A Survey of Confidence Estimation and Calibration in Large Language Models** [NAACL 2024] [paper](https://aclanthology.org/2024.naacl-long.366/)
-  - `S` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
+  - `V` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 ### 3.2 Knowledge boundaries and abstention
 
@@ -362,7 +364,7 @@ Tiers:
   - `B` · `contrast` — Shows systematic overconfidence worsening across multi-step tasks with no scaling benefit in discrimination — the decisive negative result for capability self-knowledge.
 
 - **Know Your Limits: A Survey of Abstention in Large Language Models** [TACL 2025] [paper](https://aclanthology.org/2025.tacl-1.26/)
-  - `S` · `positioning` — The definitive framing of abstention via query, model, and human-values, explicitly asking whether abstention can be a task-general meta-capability — the organizing claim here.
+  - `V` · `positioning` — The definitive framing of abstention via query, model, and human-values, explicitly asking whether abstention can be a task-general meta-capability — the organizing claim here.
 
 ### 3.3 Process states and evolving uncertainty
 
@@ -422,10 +424,10 @@ Tiers:
   - `B` · `contrast` — Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.
 
 - **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** [TMLR 2025] [paper](https://arxiv.org/abs/2503.16419)
-  - `S` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
+  - `V` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ### 3.5 Signal access: reports, logits and probes
 
@@ -461,7 +463,7 @@ Tiers:
   - `B` · `boundary` — Reproduces Anthropic's 20 percent result on an 8B model, then shows it collapses under prompt variation while magnitude classification holds — pinpointing how narrow the effect is.
 
 - **Does It Make Sense to Speak of Introspection in Large Language Models?** [arXiv 2025] [paper](https://arxiv.org/abs/2506.05068)
-  - `S` · `positioning` — Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.
+  - `V` · `positioning` — Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.
 
 ## 4. Metacognitive Decision & Control
 
@@ -619,7 +621,7 @@ Tiers:
   - `A` · `benchmark` — Supplies the large-scale API-retrieval and tool-selection evaluation subsequent delegation controllers are measured against, and shows selection quality degrades long before invocation ability does.
 
 - **LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks** [ICML 2024] [paper](https://arxiv.org/abs/2402.01817)
-  - `S` · `positioning` — States the delegation thesis in its strongest form — the model should generate candidates and hand verification to external critics — and is the framework reference for the reach-outside-itself-for-soundness argument.
+  - `V` · `positioning` — States the delegation thesis in its strongest form — the model should generate candidates and hand verification to external critics — and is the framework reference for the reach-outside-itself-for-soundness argument.
 
 ### 4.4 How: verification and self-correction
 
@@ -673,7 +675,7 @@ Tiers:
   - `B` · `boundary` — Shows intrinsic self-correction works only when the model is both certain and wrong, identifying the calibration condition that makes the correction decision non-trivial.
 
 - **When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs** [TACL 2024] [paper](https://arxiv.org/abs/2406.01297)
-  - `S` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
+  - `V` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
 
 ### 4.5 How much: adaptive reasoning budget
 
@@ -724,7 +726,7 @@ Tiers:
   - `B` · `boundary` — Shows the budget's marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.
 
 - **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** [TMLR 2025] [paper](https://arxiv.org/abs/2503.16419)
-  - `S` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
+  - `V` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
 
 ### 4.6 Unified cost-aware and light controllers
 
@@ -775,7 +777,7 @@ Tiers:
   - `A` · `benchmark` — Establishes process supervision as the utility-bearing signal for step-level control and releases the annotated corpus that makes learned verifiers evaluable.
 
 - **A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning** [arXiv 2025] [paper](https://arxiv.org/abs/2501.02497) [repo](https://github.com/Dereck0602/Awesome_Test_Time_LLMs)
-  - `S` · `positioning` — The sibling survey this chapter must position against; its feedback-modeling and search-strategy taxonomy frames how utility-aware control relates to the broader test-time-compute literature.
+  - `V` · `positioning` — The sibling survey this chapter must position against; its feedback-modeling and search-strategy taxonomy frames how utility-aware control relates to the broader test-time-compute literature.
 
 ## 5. Evaluation of Metacognitive Utility
 
@@ -816,10 +818,10 @@ Tiers:
   - `A` · `benchmark` — Elevates semantic entropy to a validated confabulation detector with a Nature-scale generalization claim, anchoring the strongest-calibration-signal argument.
 
 - **A Survey of Confidence Estimation and Calibration in Large Language Models** [NAACL 2024] [paper](https://aclanthology.org/2024.naacl-long.366/)
-  - `S` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
+  - `V` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 ### 5.2 Decision utility: quality–cost trade-off
 
@@ -849,7 +851,7 @@ Tiers:
   - `B` · `boundary` — Shows the budget's marginal value is category-dependent and often near zero, the boundary condition any allocation policy must encode rather than assume away.
 
 - **A Survey of Confidence Estimation and Calibration in Large Language Models** [NAACL 2024] [paper](https://aclanthology.org/2024.naacl-long.366/)
-  - `S` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
+  - `V` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
 
 ### 5.3 Expected vs. realized intervention utility
 
@@ -885,10 +887,10 @@ Tiers:
   - `B` · `contrast` — Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 - **A Survey of Confidence Estimation and Calibration in Large Language Models** [NAACL 2024] [paper](https://aclanthology.org/2024.naacl-long.366/)
-  - `S` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
+  - `V` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
 
 ### 5.4 Counterfactual controls and attribution
 
@@ -924,7 +926,7 @@ Tiers:
   - `B` · `boundary` — Shows the model internally encodes truthfulness but does not act on it; the counterfactual probe establishing that signal presence is not signal use — latent monitoring is overridden by output bias.
 
 - **When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs** [TACL 2024] [paper](https://arxiv.org/abs/2406.01297)
-  - `S` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
+  - `V` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
 
 ### 5.5 Compute-matched comparisons and regret
 
@@ -954,7 +956,7 @@ Tiers:
   - `B` · `contrast` — The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.
 
 - **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** [TMLR 2025] [paper](https://arxiv.org/abs/2503.16419)
-  - `S` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
+  - `V` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
 
 ### 5.6 Cross-level gains: regulation vs. learning
 
@@ -984,13 +986,13 @@ Tiers:
   - `B` · `contrast` — The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.
 
 - **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** [TMLR 2025] [paper](https://arxiv.org/abs/2503.16419)
-  - `S` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
+  - `V` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
 
 - **When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs** [TACL 2024] [paper](https://arxiv.org/abs/2406.01297)
-  - `S` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
+  - `V` · `positioning` — Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.
 
 - **A Survey of Confidence Estimation and Calibration in Large Language Models** [NAACL 2024] [paper](https://aclanthology.org/2024.naacl-long.366/)
-  - `S` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
+  - `V` · `positioning` — Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.
 
 ## 6. Meta-Regulation
 
@@ -1037,7 +1039,7 @@ Tiers:
   - `B` · `contrast` — The canonical negative result that self-checking gains vanish under proper evaluation, forcing a distinction between metacognitive-looking behaviour and real self-regulation.
 
 - **Metacognition and Uncertainty Communication in Humans and Large Language Models** [Current Directions in Psychological Science 2025] [paper](https://arxiv.org/abs/2504.14045)
-  - `S` · `positioning` — Frames monitoring as confidence and uncertainty estimation and surveys why results on LLM metacognitive insight conflict, supplying conceptual vocabulary and a caution against over-claiming.
+  - `V` · `positioning` — Frames monitoring as confidence and uncertainty estimation and surveys why results on LLM metacognitive insight conflict, supplying conceptual vocabulary and a caution against over-claiming.
 
 ### 6.2 Learning control and correction policies
 
@@ -1079,7 +1081,7 @@ Tiers:
   - `D` · `representative` — Provides a general mechanism for updating any text variable in a pipeline via textual gradients, supplying the optimization substrate later self-improving systems use to rewrite their own control logic.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ### 6.3 Feedback-driven meta-policy updates
 
@@ -1160,7 +1162,7 @@ Tiers:
   - `A` · `benchmark` — Provides the measurement apparatus — can a model label the skill a problem requires, and does that labelling improve solutions — grounding claims about monitor competence in a concrete, reusable probe.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ### 6.5 Cross-task transfer and adaptation
 
@@ -1196,7 +1198,7 @@ Tiers:
   - `B` · `boundary` — Its authors state that consolidation is currently task-specific with no cross-task transfer yet — a self-declared limitation honestly marking the edge of what meta-knowledge transfer delivers today.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ## 7. Toward Recursive Self-Improvement
 
@@ -1327,7 +1329,7 @@ Tiers:
   - `D` · `representative` — Collapses meta-agent and target-agent into one system that edits its own codebase, making which self-modification to attempt a concrete per-iteration decision over a utility that weighs performance against cost and time.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 ### 7.4 Future improvement potential / metaproductivity
 
@@ -1399,16 +1401,16 @@ Tiers:
   - `B` · `boundary` — The canonical instability of recursive self-training: tails of the true distribution disappear over generations, a concrete mechanism by which self-improvement degrades.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 - **A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve** [TMLR 2026] [paper](https://arxiv.org/abs/2507.21046)
-  - `S` · `positioning` — Its formalization deliberately makes self-evolving broader than RSI, useful precisely because it shows how easily the term over-extends.
+  - `V` · `positioning` — Its formalization deliberately makes self-evolving broader than RSI, useful precisely because it shows how easily the term over-extends.
 
 - **Self-Improvement in Multimodal Large Language Models: A Survey** [arXiv 2025] [paper](https://arxiv.org/abs/2510.02665)
-  - `S` · `positioning` — Finds the terminology so blurred that it must redefine self-improvement versus self-refinement, a direct illustration of why a rigorous boundary section is required.
+  - `V` · `positioning` — Finds the terminology so blurred that it must redefine self-improvement versus self-refinement, a direct illustration of why a rigorous boundary section is required.
 
 - **Cognitive Architectures for Language Agents (CoALA)** [TMLR 2024] [paper](https://arxiv.org/abs/2309.02427)
-  - `S` · `positioning` — Supplies the architectural vocabulary needed to state what a system would have to modify for self-improvement to become recursive rather than merely adaptive.
+  - `V` · `positioning` — Supplies the architectural vocabulary needed to state what a system would have to modify for self-improvement to become recursive rather than merely adaptive.
 
 ## 8. Open Challenges
 
@@ -1446,13 +1448,13 @@ Tiers:
   - `B` · `contrast` — Shows self-recognition is fragile and prompt-dependent, the contrast case proving that a candidate boundary criterion (self-identification) is neither necessary nor sufficient.
 
 - **Metacognition in LLMs: Foundations, Progress, and Opportunities** [arXiv 2026] [paper](https://arxiv.org/abs/2607.11881)
-  - `S` · `positioning` — The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.
+  - `V` · `positioning` — The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.
 
 - **AI Awareness** [arXiv 2025] [paper](https://arxiv.org/abs/2504.20084)
-  - `S` · `positioning` — Surveys the definitional sprawl of awareness and self-knowledge in LLMs, used to argue the boundary is currently definitional rather than empirical.
+  - `V` · `positioning` — Surveys the definitional sprawl of awareness and self-knowledge in LLMs, used to argue the boundary is currently definitional rather than empirical.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 ### 8.2 Causal value of monitoring signals
 
@@ -1515,10 +1517,10 @@ Tiers:
   - `B` · `contrast` — Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 ### 8.4 Metacognitive credit and feedback reliability
 
@@ -1554,7 +1556,7 @@ Tiers:
   - `B` · `contrast` — Shows self-recognition is fragile and prompt-dependent, the contrast case proving that a candidate boundary criterion (self-identification) is neither necessary nor sufficient.
 
 - **What Large Language Models Know and What People Think They Know** [Nature Machine Intelligence 2025] [paper](https://doi.org/10.1038/s42256-024-00976-7)
-  - `S` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
+  - `V` · `positioning` — Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.
 
 ### 8.5 Long-horizon stability and oversight
 
@@ -1584,13 +1586,13 @@ Tiers:
   - `B` · `contrast` — Arguing self-reports are untrustworthy and testing strategic deployment instead, it sets the evidential bar any genuine-metacognition claim must clear.
 
 - **Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning** [ICML 2025] [paper](https://proceedings.mlr.press/v267/liu25cw.html)
-  - `S` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
+  - `V` · `positioning` — Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.
 
 - **Recursive Self-Improvement in AI** [arXiv 2026] [paper](https://arxiv.org/abs/2607.07663)
-  - `S` · `positioning` — Surveys recursive self-improvement mechanisms and failure modes, the organizing reference for what stability must mean.
+  - `V` · `positioning` — Surveys recursive self-improvement mechanisms and failure modes, the organizing reference for what stability must mean.
 
 - **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** [TMLR 2025] [paper](https://arxiv.org/abs/2503.16419)
-  - `S` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
+  - `V` · `positioning` — The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.
 
 ## Reference
 

@@ -40,7 +40,7 @@ ROLE_BLURB = {
 # Facet 2. The distinction the whole survey turns on: a paper that *studies*
 # metacognition is not the same as a paper that supplies machinery metacognition
 # can use, and neither is a paper that only probes where the mechanism breaks.
-TIER_ORDER = ["D", "A", "B", "S"]
+TIER_ORDER = ["D", "A", "B", "V", "S"]
 TIER_BLURB = {
     "D": "**Primary metacognitive study.** Directly studies the stated "
          "metacognitive concept or mechanism. Only D-tier evidence may ground a "
@@ -50,8 +50,11 @@ TIER_BLURB = {
          "metacognition.",
     "B": "**Boundary.** Tests where the mechanism stops working — negative "
          "results, limitations, counterexamples.",
-    "S": "**Survey synthesis.** This survey's own analytical proposal, "
-         "protocol, or accounting. Not a result claimed by any cited paper.",
+    "V": "**Other authors' survey, review, or position paper.** Maps a field "
+         "rather than reporting a new result; cited for framing, not as "
+         "evidence about metacognition.",
+    "S": "**This survey's own proposal.** An analytical proposal, protocol, or "
+         "accounting introduced here. Not a result claimed by any cited paper.",
 }
 LINK_ORDER = ["paper", "pdf", "acl", "proceedings", "code", "data", "repo", "book"]
 
@@ -153,16 +156,15 @@ def build_readme(tax, papers):
     for s in sections:
         by_chapter.setdefault(s["chapter"], []).append(s)
 
-    # count tier facets, not just entries: one work may be cited in several
-    # sub-questions, and the interesting number is how many distinct works sit
-    # in each evidence tier
-    tier_of = {}
+    # count citations, not distinct works: because a work can carry a different
+    # tier at each place it is cited, "how many distinct works are tier D" is not
+    # well defined once the facets are position-dependent.
+    tier_counts = {}
     for plist in papers.values():
         for p in plist:
-            tier_of.setdefault(p["title"], p.get("tier", "D"))
-    tier_counts = {}
-    for t in tier_of.values():
-        tier_counts[t] = tier_counts.get(t, 0) + 1
+            t = p.get("tier", "D")
+            tier_counts[t] = tier_counts.get(t, 0) + 1
+    n_distinct = len({p["title"] for plist in papers.values() for p in plist})
 
     out = []
     out.append(f"# {meta['title']}\n")
@@ -179,12 +181,12 @@ def build_readme(tax, papers):
     n_papers = sum(len(v) for v in papers.values())
     n_sections = len(sections)
     out.append(
-        f"**{n_papers} citations** of **{len(tier_of)} distinct works** across "
+        f"**{n_papers} citations** of **{n_distinct} distinct works** across "
         f"**{n_sections} sub-questions**, grouped into **{len(chapters)} chapters** and "
         f"**{len(tax.get('levels', []))} level bands**.\n"
     )
     out.append(
-        "| Tier | Distinct works | Meaning |\n|---|---|---|\n"
+        "| Tier | Citations | Meaning |\n|---|---|---|\n"
         + "\n".join(f"| `{t}` | {tier_counts.get(t, 0)} | {TIER_BLURB[t]} |"
                     for t in TIER_ORDER) + "\n"
     )
@@ -219,8 +221,12 @@ def build_readme(tax, papers):
 
     out.append("## How to read the two facets\n")
     out.append(
-        "Every entry carries exactly one **role** and exactly one **tier**. The role says "
-        "what job the citation does; the tier says how much weight it can bear. Roles:\n"
+        "Every entry carries exactly one **role** and exactly one **tier**. Both are "
+        "properties of the *citation*, not of the work: a paper that is primary "
+        "metacognitive evidence in one sub-question can be adjacent or boundary "
+        "evidence in another, and it is recorded as such at each place it appears. "
+        "The role says what job the citation does; the tier says how much weight it "
+        "can bear *here*. Roles:\n"
     )
     out.append("| Role | Meaning |")
     out.append("|---|---|")
@@ -235,8 +241,9 @@ def build_readme(tax, papers):
     out.append("")
     out.append(
         "> **Classification rule.** `D` directly studies the stated metacognitive "
-        "concept/mechanism; `A` is adjacent/enabling; `B` tests a boundary; `S` is this "
-        "survey's analytical proposal (not a result claimed by cited papers).\n"
+        "concept/mechanism; `A` is adjacent/enabling; `B` tests a boundary; `V` is "
+        "another author's survey or position paper, cited for framing; `S` is this "
+        "survey's own analytical proposal (not a result claimed by cited papers).\n"
     )
 
     out.append("## Level framework\n")
@@ -445,13 +452,14 @@ FIG_ROLE_RANK = ["representative", "foundational", "benchmark",
 # citation label because the difference between "a paper that studies
 # metacognition" and "a paper that supplies machinery metacognition can use" is
 # the single most load-bearing distinction in the survey.
-FIG_TIER_ORDER = ["D", "A", "B", "S"]
-FIG_TIER_RANK = {"D": 0, "A": 1, "B": 2, "S": 3}
+FIG_TIER_ORDER = ["D", "A", "B", "V", "S"]
+FIG_TIER_RANK = {"D": 0, "A": 1, "B": 2, "V": 3, "S": 4}
 FIG_TIER_BLURB = {
     "D": "primary metacognitive study",
     "A": "adjacent / enabling",
     "B": "boundary",
-    "S": "survey synthesis",
+    "V": "other authors' survey",
+    "S": "this survey's own proposal",
 }
 
 VENUE_ABBR = [
@@ -486,6 +494,17 @@ FIG_STOP_PREFIX = {"a survey", "position", "metacognition", "metacognitive",
 # is the name the survey body itself uses for the work, so the figure and the
 # prose stay legible together.
 FIG_LABEL_OVERRIDE = {
+    # This survey's own proposals. short_title() would truncate all three
+    # "Survey …" proposals to the same string, leaving 5.3 and 5.4
+    # indistinguishable in the figure; name what each one proposes instead.
+    "Survey protocol: compare Q estimates to outcomes":
+        "Protocol: Q vs. realized gain",
+    "Survey protocol: matched-state action ablations":
+        "Protocol: matched-state ablations",
+    "Survey accounting: ΔU1 (L1→L0) and ΔU2 (L2→L1)":
+        "Accounting: ΔU1 / ΔU2",
+    "Intervention-based value-of-information tests":
+        "Protocol: intervention-based VoI tests",
     "Metacognition and Cognitive Monitoring: A New Area of Cognitive-Developmental Inquiry":
         "Metacognition",
     "Metacognition in Computation: A Selected Research Review": "Metacognition in Computation",
@@ -742,7 +761,14 @@ def leaf_citations(plist, budget_px=CIT_BUDGET, size=9.5):
         key = name.lower()
         if key in used:
             continue
-        labels.append(f"{p.get('tier', 'D')}  {name} ({short_venue(p['venue'])})")
+        tier = p.get("tier", "D")
+        # An S entry is this survey's own proposal; its "venue" is a self-
+        # reference, so appending it would render "This survey (this survey
+        # (proposal))". Name the proposal only.
+        if tier == "S" or str(p.get("venue", "")).strip().lower().startswith("this survey"):
+            labels.append(f"{tier}  {name}")
+        else:
+            labels.append(f"{tier}  {name} ({short_venue(p['venue'])})")
         used.add(key)
     if not labels:
         return ""
@@ -967,7 +993,7 @@ def layout(tax, papers=None):
     for x, lbl in ((LVL_TXT_X, "LEVEL / ROLE"), (CH_X, "CHAPTER"),
                    (LEAF_X, "SUB-QUESTION / MECHANISM"),
                    (WORKS_X, "SELECTED WORKS  (D: primary   A: adjacent/enabling"
-                             "   B: boundary   S: survey synthesis)")):
+                             "   B: boundary   V: survey of others   S: this survey)")):
         a = "end" if x == WORKS_X else "start"
         xa = FIG_W - RIGHT_INSET if a == "end" else x
         texts.append(dict(x=xa, y=MAST_H - 12, s=lbl, size=9.5, color=FIG_MUTE,
@@ -990,7 +1016,8 @@ def build_figure_svg(tax, papers=None):
              'chapter that belongs to it; every chapter branches into its sub-questions, '
              'each of which carries a compact citation string of its representative works, '
              'prefixed by evidence tier D (primary metacognitive study), A (adjacent or '
-             'enabling), B (boundary), or S (survey synthesis). The bands run from '
+             'enabling), B (boundary), V (another author survey or position paper), or '
+             'S (this survey own proposal). The bands run from '
              'theoretical foundations through the L0-L2 framework, Level 1 representation, '
              'Level 1 regulation, cross-level evaluation, Level 2 learning, and the '
              'recursive extension, ending in research gaps.</desc>')

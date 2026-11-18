@@ -1,7 +1,7 @@
 # Bibliography: ch4 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -311,7 +311,7 @@
       venue: 'ICML 2024'
       links: {'paper': 'https://arxiv.org/abs/2402.01817'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'States the delegation thesis in its strongest form — the model should generate candidates and hand verification to external critics — and is the framework reference for the reach-outside-itself-for-soundness argument.'
     - title: 'Large Language Models as Tool Makers'
@@ -398,7 +398,7 @@
       venue: 'TACL 2024'
       links: {'paper': 'https://arxiv.org/abs/2406.01297'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Systematizes the field into the conditions under which self-correction helps (reliable external feedback, weak-to-strong, task decomposability), giving the chapter its organizing framework for this subsection.'
     - title: 'LLMs Cannot Find Reasoning Errors, But Can Correct Them Given the Error Location'
@@ -520,7 +520,7 @@
       venue: 'TMLR 2025'
       links: {'paper': 'https://arxiv.org/abs/2503.16419'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
     - title: 'To CoT or Not to CoT? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning'
@@ -649,7 +649,7 @@
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2501.02497', 'repo': 'https://github.com/Dereck0602/Awesome_Test_Time_LLMs'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The sibling survey this chapter must position against; its feedback-modeling and search-strategy taxonomy frames how utility-aware control relates to the broader test-time-compute literature.'
 

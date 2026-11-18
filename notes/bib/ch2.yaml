@@ -1,7 +1,7 @@
 # Bibliography: ch2 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -46,7 +46,7 @@
       venue: 'MIT Press 2011'
       links: {'book': 'https://direct.mit.edu/books/book/2886'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The edited volume codifying meta-level control and introspective monitoring; the standard citation for the machine-side monitoring-control account.'
 
@@ -91,14 +91,14 @@
       venue: 'arXiv 2024'
       links: {'paper': 'https://arxiv.org/abs/2408.05568'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Argues model biases stem from missing monitoring and control, reframing apparent competence as a metacognitive deficit — a skeptical diagnostic framework.'
     - title: 'Does It Make Sense to Speak of Introspection in Large Language Models?'
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2506.05068'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.'
     - title: 'Language Models Fail to Introspect About Their Knowledge of Language'
@@ -119,21 +119,21 @@
       venue: 'Trends in Cognitive Sciences 2025'
       links: {'paper': 'https://doi.org/10.1016/j.tics.2025.01.002'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Contrasts object-level heuristics with metacognitive strategies such as humility and perspective-taking, sharpening the object-level versus metacognitive line.'
     - title: 'Metacognitive AI: Framework and the Case for a Neurosymbolic Approach'
       venue: 'NeSy 2024'
       links: {'paper': 'https://doi.org/10.1007/978-3-031-71170-1_7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Offers the TRAP criteria (transparency, reasoning, adaptation, perception) for what counts as metacognitive AI, an alternative definitional test to compare against.'
     - title: 'Metacognition in LLMs: Foundations, Progress, and Opportunities'
       venue: 'arXiv 2026'
       links: {'paper': 'https://arxiv.org/abs/2607.11881'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The directly overlapping prior survey; cited here for its definitional scope, which this paper narrows and operationalizes.'
 

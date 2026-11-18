@@ -1,7 +1,7 @@
 # Bibliography: ch3 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -60,7 +60,7 @@
       venue: 'NAACL 2024'
       links: {'paper': 'https://aclanthology.org/2024.naacl-long.366/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Organizes white-box versus black-box confidence methods and metrics (ECE, SCE, ACE, AUROC, AUARC), providing the taxonomy this section maps onto.'
     - title: 'On Calibration of Modern Neural Networks'
@@ -81,7 +81,7 @@
       venue: 'Nature Machine Intelligence 2025'
       links: {'paper': 'https://doi.org/10.1038/s42256-024-00976-7'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Separates the calibration gap between user and model confidence from the discrimination gap, arguing internal confidence exists but is poorly communicated.'
     - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
@@ -126,7 +126,7 @@
       venue: 'TACL 2025'
       links: {'paper': 'https://aclanthology.org/2025.tacl-1.26/'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The definitive framing of abstention via query, model, and human-values, explicitly asking whether abstention can be a task-general meta-capability — the organizing claim here.'
     - title: 'Knowledge of Knowledge: Exploring Known-Unknowns Uncertainty (KUQ)'
@@ -244,7 +244,7 @@
       venue: 'TMLR 2025'
       links: {'paper': 'https://arxiv.org/abs/2503.16419'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'The taxonomy of runtime efficiency and failure-avoidance methods, mapping the design space this subsection must cover.'
     - title: 'Decoupling Metacognition from Cognition: A Framework for Evaluating Metacognition in LLMs'
@@ -279,7 +279,7 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
 
@@ -345,7 +345,7 @@
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2506.05068'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.'
     - title: 'LLM Evaluators Recognize and Favor Their Own Generations'

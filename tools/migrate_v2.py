@@ -11,7 +11,7 @@ Two things change:
      The old theory block (2.1-2.5) is re-cut into the corrected layout:
      ch1 gains its own 1.1-1.3, and ch2 keeps 2.1-2.2.
 
-  2. A new `tier` field (D/A/B/S) alongside `role`. Where the corrected deck
+  2. A new `tier` field (D/A/B/V/S) alongside `role`. Where the corrected deck
      states the tier explicitly we use it verbatim; otherwise we derive it from
      `role`, which is a good proxy: a foundational or representative work
      directly studies the concept (D), a contrast or boundary work tests its
@@ -182,7 +182,11 @@ ROLE_TIER = {
     "contrast": "B",
     "boundary": "B",
     "benchmark": "A",
-    "positioning": "S",
+    # Another author's survey/position paper. This is tier V, NOT S: S is
+    # reserved for this survey's own proposals (deck_rank -1), which are added
+    # by tools/conform_v2.py. Rolling the two together made tier S mean two
+    # different things at once.
+    "positioning": "V",
 }
 
 # --------------------------------------------------------------- 3. corrections
@@ -339,7 +343,7 @@ def main():
         body = [f"# Bibliography: {cname} — see notes/taxonomy.yaml for the structure.",
                 "# Each paper carries two facets:",
                 "#   role  — what job the citation does in the argument",
-                "#   tier  — D primary / A adjacent / B boundary / S synthesis",
+                "#   tier  — D primary / A adjacent / B boundary / V others' survey / S own",
                 ""]
         for sec in secs:
             body.append(f'- section: "{sec}"')

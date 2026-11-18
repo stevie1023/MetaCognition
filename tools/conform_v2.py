@@ -270,7 +270,7 @@ def main():
             f"# Bibliography: {cname} — see notes/taxonomy.yaml for the structure.",
             "# Two facets per entry:",
             "#   role  — what job the citation does in the argument",
-            "#   tier  — D primary / A adjacent / B boundary / S synthesis",
+            "#   tier  — D primary / A adjacent / B boundary / V others' survey / S own",
             "#   deck_rank — position in the corrected deck's citation string",
             "#               (-1 marks this survey's own proposal; 999 = unnamed)",
             "",

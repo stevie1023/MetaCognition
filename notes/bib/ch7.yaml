@@ -1,7 +1,7 @@
 # Bibliography: ch7 — see notes/taxonomy.yaml for the structure.
 # Two facets per entry:
 #   role  — what job the citation does in the argument
-#   tier  — D primary / A adjacent / B boundary / S synthesis
+#   tier  — D primary / A adjacent / B boundary / V others' survey / S own
 #   deck_rank — position in the corrected deck's citation string
 #               (-1 marks this survey's own proposal; 999 = unnamed)
 
@@ -255,7 +255,7 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
 
@@ -401,28 +401,28 @@
       venue: 'ICML 2025'
       links: {'paper': 'https://proceedings.mlr.press/v267/liu25cw.html'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Applies cost-benefit metacontrol to the learning-allocation decision (what and when to learn), extending value of computation beyond a single inference episode.'
     - title: 'A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve'
       venue: 'TMLR 2026'
       links: {'paper': 'https://arxiv.org/abs/2507.21046'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Its formalization deliberately makes self-evolving broader than RSI, useful precisely because it shows how easily the term over-extends.'
     - title: 'Self-Improvement in Multimodal Large Language Models: A Survey'
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2510.02665'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Finds the terminology so blurred that it must redefine self-improvement versus self-refinement, a direct illustration of why a rigorous boundary section is required.'
     - title: 'Cognitive Architectures for Language Agents (CoALA)'
       venue: 'TMLR 2024'
       links: {'paper': 'https://arxiv.org/abs/2309.02427'}
       role: positioning
-      tier: S
+      tier: V
       deck_rank: 999
       why: 'Supplies the architectural vocabulary needed to state what a system would have to modify for self-improvement to become recursive rather than merely adaptive.'
 
