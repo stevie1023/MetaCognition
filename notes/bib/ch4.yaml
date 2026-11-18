@@ -107,7 +107,7 @@
       why: 'Introduces the explicit step-level deliberation decision (expand, evaluate, prune) that every later intervention trigger in this section is a cheaper approximation of.'
     - title: 'Reasoning with Language Model is Planning with World Model'
       venue: 'EMNLP 2023'
-      links: {'paper': 'https://arxiv.org/abs/2305.14992', 'code': 'https://github.com/Ber666/llm-reasoners'}
+      links: {'paper': 'https://arxiv.org/abs/2305.14992', 'code': 'https://github.com/maitrix-org/llm-reasoners'}
       role: foundational
       tier: D
       deck_rank: 999
@@ -115,6 +115,13 @@
 
 - section: "4.2"
   papers:
+    - title: 'Chain-of-Thought Prompting Elicits Reasoning in Large Language Models'
+      venue: 'NeurIPS 2022'
+      links: {'paper': 'https://arxiv.org/abs/2201.11903'}
+      role: foundational
+      tier: A
+      deck_rank: 999
+      why: 'The original chain-of-thought result, and the baseline every strategy in this section is a deliberate departure from: it fixes one strategy (a linear rationale) for all inputs, which is exactly the choice later work makes adaptively.'
     - title: 'Tree of Thoughts: Deliberate Problem Solving with Large Language Models'
       venue: 'NeurIPS 2023'
       links: {'paper': 'https://arxiv.org/abs/2305.10601', 'code': 'https://github.com/princeton-nlp/tree-of-thought-llm'}
@@ -556,12 +563,12 @@
       why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
     - title: 'RouteLLM: Learning to Route LLMs with Preference Data'
       venue: 'ICLR 2025'
-      links: {'paper': 'https://openreview.net/forum?id=TriSxazD2A'}
+      links: {'paper': 'https://openreview.net/forum?id=8sSqNntaMr'}
       role: representative
       tier: A
       deck_rank: 1
       why: 'Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.'
-    - title: 'LLM2Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them'
+    - title: 'LLM-as-Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them'
       venue: 'arXiv 2026'
       links: {'paper': 'https://arxiv.org/abs/2610.02076', 'code': 'https://github.com/nokia-applied-research/AnyJev'}
       role: representative
@@ -570,7 +577,7 @@
       why: 'Extracts a calibrated decision directly from next-token probabilities over candidate options instead of generating free text — the cheapest end of the cost-aware controller spectrum, and evidence that the decision can be read off the base model without a separate head.'
     - title: 'Principles of Metareasoning'
       venue: 'Artificial Intelligence 1991'
-      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-R'}
+      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-c'}
       role: foundational
       tier: D
       deck_rank: 999

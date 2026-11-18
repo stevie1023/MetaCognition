@@ -162,7 +162,7 @@
       why: 'Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.'
     - title: 'RouteLLM: Learning to Route LLMs with Preference Data'
       venue: 'ICLR 2025'
-      links: {'paper': 'https://openreview.net/forum?id=TriSxazD2A'}
+      links: {'paper': 'https://openreview.net/forum?id=8sSqNntaMr'}
       role: representative
       tier: A
       deck_rank: 1

@@ -183,7 +183,7 @@
 <text x="1188.0" y="1029.0" font-size="9.5" font-weight="400" fill="#5A6791">D  MUR (ACL 2026), B  s1 (arXiv 2025), A  Test-Time Compute vs. Parameters (ICLR 2025), D  Large Language Monkeys (arXiv 2024), D  Token-Budget-Aware Reasoning (arXiv 2024), etc.</text>
 <text x="758.0" y="1070.0" font-size="11" font-weight="600" fill="#4056A8">4.6</text>
 <text x="783.0" y="1070.0" font-size="11" font-weight="400" fill="#26251F">Unified cost-aware and light controllers</text>
-<text x="1188.0" y="1070.0" font-size="9.5" font-weight="400" fill="#5A6791">D  AutoMix (NeurIPS 2024), A  RouteLLM (ICLR 2025), A  LLM2Jev (arXiv 2026), D  Hybrid LLM (ICLR 2024), D  Uncertainty of Thoughts (NeurIPS 2024), D  GLoRe (ICML 2024), D  Math-Shepherd (ACL 2024), etc.</text>
+<text x="1188.0" y="1070.0" font-size="9.5" font-weight="400" fill="#5A6791">D  AutoMix (NeurIPS 2024), A  RouteLLM (ICLR 2025), A  LLM-as-Jev (arXiv 2026), D  Hybrid LLM (ICLR 2024), D  Uncertainty of Thoughts (NeurIPS 2024), D  GLoRe (ICML 2024), D  Math-Shepherd (ACL 2024), etc.</text>
 <text x="422.0" y="1253.0" font-size="12.5" font-weight="600" fill="#6F5314">5 · Evaluation of Utility</text>
 <text x="758.0" y="1141.0" font-size="11" font-weight="600" fill="#B78A3C">5.1</text>
 <text x="783.0" y="1141.0" font-size="11" font-weight="400" fill="#26251F">Monitoring accuracy and calibration</text>

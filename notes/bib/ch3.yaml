@@ -334,7 +334,7 @@
       tier: B
       deck_rank: 999
       why: 'With matched-similarity baselines, shows prompted self-reports lack privileged access — evidence that many metacognitive-looking behaviours may be pattern matching.'
-    - title: 'Feeling the Strength but Not the Source: Partial Introspection in LLMs'
+    - title: 'Detecting the Disturbance: A Nuanced View of Introspective Abilities in LLMs'
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2512.12411'}
       role: boundary

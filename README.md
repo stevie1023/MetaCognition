@@ -4,12 +4,12 @@
 
 A curated reading list for a level-structured survey of metacognition in large language models. Unlike a flat paper list, every work carries two facets: the **logical role** it plays in the argument, and the **evidence tier** that says how far it can be trusted. The bibliography therefore doubles as an outline of the reasoning — and makes visible which claims rest on primary metacognitive evidence and which rest on adjacent work.
 
-**390 citations** of **196 distinct works** across **37 sub-questions**, grouped into **8 chapters** and **8 level bands**.
+**391 citations** of **197 distinct works** across **37 sub-questions**, grouped into **8 chapters** and **8 level bands**.
 
 | Tier | Citations | Meaning |
 |---|---|---|
 | `D` | 229 | **Primary metacognitive study.** Directly studies the stated metacognitive concept or mechanism. Only D-tier evidence may ground a positive claim about metacognition itself. |
-| `A` | 42 | **Adjacent / enabling.** Supplies capability the metacognitive mechanism can be built on or measured with, without itself studying metacognition. |
+| `A` | 43 | **Adjacent / enabling.** Supplies capability the metacognitive mechanism can be built on or measured with, without itself studying metacognition. |
 | `B` | 66 | **Boundary.** Tests where the mechanism stops working — negative results, limitations, counterexamples. |
 | `V` | 48 | **Other authors' survey, review, or position paper.** Maps a field rather than reporting a new result; cited for framing, not as evidence about metacognition. |
 | `S` | 5 | **This survey's own proposal.** An analytical proposal, protocol, or accounting introduced here. Not a result claimed by any cited paper. |
@@ -179,7 +179,7 @@ Tiers:
 
 [](#12-metareasoning-and-value-of-computation)
 
-- **Principles of Metareasoning** [Artificial Intelligence 1991] [paper](https://doi.org/10.1016/0004-3702(91)90015-R)
+- **Principles of Metareasoning** [Artificial Intelligence 1991] [paper](https://doi.org/10.1016/0004-3702(91)90015-c)
   - `D` · `foundational` — Defines the value of computation as the expected change in action utility minus time cost, and derives the stop-when-no-positive-value rule — the formal basis for 'is more thinking worth it'.
 
 - **Resource-Rational Analysis: Understanding Human Cognition as the Optimal Use of Limited Computational Resources** [Behavioral and Brain Sciences 2020] [paper](https://doi.org/10.1017/S0140525X1900061X)
@@ -274,7 +274,7 @@ Tiers:
 - **Does It Make Sense to Speak of Introspection in Large Language Models?** [arXiv 2025] [paper](https://arxiv.org/abs/2506.05068)
   - `V` · `positioning` — Supplies the functionalist criterion (causal self-report versus mimicry) for deciding which behaviours qualify as genuinely metacognitive.
 
-- **Imagining and Building Wise Machines: The Centrality of AI Metacognition** [Trends in Cognitive Sciences 2025] [paper](https://doi.org/10.1016/j.tics.2025.01.002)
+- **Imagining and Building Wise Machines: The Centrality of AI Metacognition** [Trends in Cognitive Sciences 2026] [paper](https://doi.org/10.1016/j.tics.2026.01.002)
   - `V` · `positioning` — Contrasts object-level heuristics with metacognitive strategies such as humility and perspective-taking, sharpening the object-level versus metacognitive line.
 
 - **Metacognitive AI: Framework and the Case for a Neurosymbolic Approach** [NeSy 2024] [paper](https://doi.org/10.1007/978-3-031-71170-1_7)
@@ -459,7 +459,7 @@ Tiers:
 - **Language Models Fail to Introspect About Their Knowledge of Language** [COLM 2025] [paper](https://arxiv.org/abs/2503.07513)
   - `B` · `boundary` — With matched-similarity baselines, shows prompted self-reports lack privileged access — evidence that many metacognitive-looking behaviours may be pattern matching.
 
-- **Feeling the Strength but Not the Source: Partial Introspection in LLMs** [arXiv 2025] [paper](https://arxiv.org/abs/2512.12411)
+- **Detecting the Disturbance: A Nuanced View of Introspective Abilities in LLMs** [arXiv 2025] [paper](https://arxiv.org/abs/2512.12411)
   - `B` · `boundary` — Reproduces Anthropic's 20 percent result on an 8B model, then shows it collapses under prompt variation while magnitude classification holds — pinpointing how narrow the effect is.
 
 - **Does It Make Sense to Speak of Introspection in Large Language Models?** [arXiv 2025] [paper](https://arxiv.org/abs/2506.05068)
@@ -518,7 +518,7 @@ Tiers:
 - **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** [NeurIPS 2023] [paper](https://arxiv.org/abs/2305.10601) [code](https://github.com/princeton-nlp/tree-of-thought-llm)
   - `D` · `foundational` — Introduces the explicit step-level deliberation decision (expand, evaluate, prune) that every later intervention trigger in this section is a cheaper approximation of.
 
-- **Reasoning with Language Model is Planning with World Model** [EMNLP 2023] [paper](https://arxiv.org/abs/2305.14992) [code](https://github.com/Ber666/llm-reasoners)
+- **Reasoning with Language Model is Planning with World Model** [EMNLP 2023] [paper](https://arxiv.org/abs/2305.14992) [code](https://github.com/maitrix-org/llm-reasoners)
   - `D` · `foundational` — Formalizes reasoning as Monte Carlo tree search over a world model, the source of the value-of-a-state estimate that 'when to intervene' is trying to compute cheaply.
 
 - **Reasoning in Token Economies: Budget-Aware Evaluation of LLM Reasoning Strategies** [EMNLP 2024] [paper](https://arxiv.org/abs/2406.06461) [acl](https://aclanthology.org/2024.emnlp-main.1112/)
@@ -568,6 +568,9 @@ Tiers:
 
 - **Q*: Improving Multi-Step Reasoning for LLMs with Deliberative Planning** [arXiv 2024] [paper](https://arxiv.org/abs/2406.14283)
   - `D` · `representative` — Applies A-star style deliberative planning with an admissible heuristic as the strategy, giving a worked example of a value-guided rather than heuristic strategy switch.
+
+- **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** [NeurIPS 2022] [paper](https://arxiv.org/abs/2201.11903)
+  - `A` · `foundational` — The original chain-of-thought result, and the baseline every strategy in this section is a deliberate departure from: it fixes one strategy (a linear rationale) for all inputs, which is exactly the choice later work makes adaptively.
 
 ### 4.3 How: retrieval, tools and escalation
 
@@ -737,13 +740,13 @@ Tiers:
 - **AutoMix: Automatically Mixing Language Models** [NeurIPS 2024] [paper](https://arxiv.org/abs/2310.12963)
   - `D` · `representative` — Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.
 
-- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=TriSxazD2A)
+- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=8sSqNntaMr)
   - `A` · `representative` — Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.
 
-- **LLM2Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them** [arXiv 2026] [paper](https://arxiv.org/abs/2610.02076) [code](https://github.com/nokia-applied-research/AnyJev)
+- **LLM-as-Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them** [arXiv 2026] [paper](https://arxiv.org/abs/2610.02076) [code](https://github.com/nokia-applied-research/AnyJev)
   - `A` · `representative` — Extracts a calibrated decision directly from next-token probabilities over candidate options instead of generating free text — the cheapest end of the cost-aware controller spectrum, and evidence that the decision can be read off the base model without a separate head.
 
-- **Principles of Metareasoning** [Artificial Intelligence 1991] [paper](https://doi.org/10.1016/0004-3702(91)90015-R)
+- **Principles of Metareasoning** [Artificial Intelligence 1991] [paper](https://doi.org/10.1016/0004-3702(91)90015-c)
   - `D` · `foundational` — Defines the value of computation as the expected change in action utility minus time cost, and derives the stop-when-no-positive-value rule — the formal basis for 'is more thinking worth it'.
 
 - **Rational Metareasoning for Large Language Models** [arXiv 2024] [paper](https://arxiv.org/abs/2410.05563)
@@ -832,7 +835,7 @@ Tiers:
 - **AutoMix: Automatically Mixing Language Models** [NeurIPS 2024] [paper](https://arxiv.org/abs/2310.12963)
   - `D` · `representative` — Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.
 
-- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=TriSxazD2A)
+- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=8sSqNntaMr)
   - `A` · `representative` — Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.
 
 - **LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens** [EMNLP 2025] [paper](https://aclanthology.org/2025.emnlp-main.171/)
@@ -877,7 +880,7 @@ Tiers:
 - **Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from LLMs** [EMNLP 2023] [paper](https://aclanthology.org/2023.emnlp-main.330/)
   - `D` · `representative` — Shows RLHF degrades logit calibration while verbalized confidence recovers much of it — the key result separating distorted output from lost internal certainty.
 
-- **How Overconfidence in Initial Choices Corrupts Reasoning** [arXiv 2025] [paper](https://arxiv.org/abs/2507.03120)
+- **How Overconfidence in Initial Choices and Underconfidence Under Criticism Modulate Change of Mind in Large Language Models** [arXiv 2025] [paper](https://arxiv.org/abs/2507.03120)
   - `B` · `contrast` — Demonstrates the controller's own value estimates are systematically overconfident early, so expected utility diverges from realized — the core expected-versus-realized pathology in this subsection.
 
 - **Do Large Language Models Know What They Are Capable Of?** [ICLR 2026] [paper](https://openreview.net/forum?id=EO6WtJ0q6G)
@@ -1501,7 +1504,7 @@ Tiers:
 - **Language Models (Mostly) Know What They Know** [arXiv 2022] [paper](https://arxiv.org/abs/2207.05221)
   - `D` · `foundational` — Establishes that models carry a usable internal signal (P(True), P(IK)) about answer correctness, grounding the entire monitoring literature.
 
-- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=TriSxazD2A)
+- **RouteLLM: Learning to Route LLMs with Preference Data** [ICLR 2025] [paper](https://openreview.net/forum?id=8sSqNntaMr)
   - `A` · `representative` — Learns the routing policy directly from preference data with a cost-aware objective, showing the utility trade-off can be trained rather than hand-specified.
 
 - **LLMs Have Intrinsic Meta-Cognition, but Need a Good Lens** [EMNLP 2025] [paper](https://aclanthology.org/2025.emnlp-main.171/)

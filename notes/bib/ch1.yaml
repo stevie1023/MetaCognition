@@ -61,7 +61,7 @@
   papers:
     - title: 'Principles of Metareasoning'
       venue: 'Artificial Intelligence 1991'
-      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-R'}
+      links: {'paper': 'https://doi.org/10.1016/0004-3702(91)90015-c'}
       role: foundational
       tier: D
       deck_rank: 0

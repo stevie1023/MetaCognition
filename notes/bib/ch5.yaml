@@ -89,7 +89,7 @@
       why: 'Models the controller as a partially observable Markov decision process whose observation is explicitly noisy, the correct formalization when the monitoring signal itself is unreliable.'
     - title: 'RouteLLM: Learning to Route LLMs with Preference Data'
       venue: 'ICLR 2025'
-      links: {'paper': 'https://openreview.net/forum?id=TriSxazD2A'}
+      links: {'paper': 'https://openreview.net/forum?id=8sSqNntaMr'}
       role: representative
       tier: A
       deck_rank: 1
@@ -160,7 +160,7 @@
       tier: A
       deck_rank: 1
       why: 'Replaces uniform test-time scaling with a per-step intervention trigger driven by time-aggregated uncertainty, and supplies the control knob that makes ''when to intervene'' a single tunable policy — the definitional instantiation of a monitoring-to-control hook.'
-    - title: 'How Overconfidence in Initial Choices Corrupts Reasoning'
+    - title: 'How Overconfidence in Initial Choices and Underconfidence Under Criticism Modulate Change of Mind in Large Language Models'
       venue: 'arXiv 2025'
       links: {'paper': 'https://arxiv.org/abs/2507.03120'}
       role: contrast
