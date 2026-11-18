@@ -195,7 +195,7 @@ ROLE_TIER = {
 # had these as preprint/arXiv because that is where they were first found.
 VENUE_FIX = {
     "RouteLLM: Learning to Route LLMs with Preference Data": (
-        "ICLR 2025", {"paper": "https://openreview.net/forum?id=TriSxazD2A"}),
+        "ICLR 2025", {"paper": "https://openreview.net/forum?id=8sSqNntaMr"}),
     "Do Large Language Models Know What They Are Capable Of?": (
         "ICLR 2026", {"paper": "https://openreview.net/forum?id=EO6WtJ0q6G"}),
 }
@@ -203,7 +203,7 @@ VENUE_FIX = {
 # Works cited the corrected deck that v1 did not carry.
 NEW_PAPERS = {
     "4.6": [dict(
-        title="LLM2Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them",
+        title="LLM-as-Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them",
         venue="arXiv 2026",
         links={"paper": "https://arxiv.org/abs/2610.02076",
                "code": "https://github.com/nokia-applied-research/AnyJev"},

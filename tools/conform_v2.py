@@ -95,7 +95,7 @@ DECK_LABEL = {
         "Scaling LLM Test-Time Compute Optimally Can Be More Effective than "
         "Scaling Model Parameters",
     "RouteLLM": "RouteLLM: Learning to Route LLMs with Preference Data",
-    "LLM2Jev": "LLM2Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them",
+    "LLM2Jev": "LLM-as-Jev: LLMs Are Already Jev-Style Decision Models—When and How to Fine-Tune Them",
     "Self-Correction Limits": "Large Language Models Cannot Self-Correct Reasoning Yet",
     "Self-Rewarding LMs": "Self-Rewarding Language Models",
     "Meta-Rewarding LMs": "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",

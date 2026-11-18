@@ -578,8 +578,8 @@ FIG_LABEL_OVERRIDE = {
     "Metamemory: A Theoretical Framework and New Findings": "Metamemory",
     "Does It Make Sense to Speak of Introspection in Large Language Models?":
         "Introspection in LLMs?",
-    "How Overconfidence in Initial Choices Corrupts Reasoning":
-        "Overconfidence Corrupts Reasoning",
+    "How Overconfidence in Initial Choices and Underconfidence Under Criticism Modulate Change of Mind in Large Language Models":
+        "Overconfidence in Initial Choices",
     # ---- labels that the generic reducer truncated mid-phrase. Each is the
     # name the deck or the survey prose uses, so figure and text agree.
     "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models":
